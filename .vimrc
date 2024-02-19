@@ -6,7 +6,8 @@ call vundle#begin()
  
  
 " 这里根据自己需要的插件来设置，以下是我的配置 "
-"
+" 自动补全插件
+Plugin 'Valloric/YouCompleteMe'
 " YouCompleteMe:语句补全插件
 set runtimepath+=~/.vim/bundle/YouCompleteMe
 autocmd InsertLeave * if pumvisible() == 0|pclose|endif "离开插入模式后自动关闭预览窗口"
@@ -103,6 +104,7 @@ Plugin 'delimitMate.vim'
 " 本地仓库的插件 "
  
 call vundle#end()
+filetype plugin indent on
  
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 """""新文件标题
@@ -277,6 +279,8 @@ set scrolloff=3
 set smartindent
 " 高亮显示普通txt文件（需要txt.vim脚本）
  au BufRead,BufNewFile *  setfiletype txt
+
+let mapleader=" "
 
 :inoremap jk <ESC>
 

@@ -1,3 +1,7 @@
+" 启用插件
+set nocompatible
+filetype on
+filetype plugin indent on
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " 插件列表
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -10,7 +14,8 @@ Plug 'chxuan/prepare-code'
 Plug 'chxuan/vim-buffer'
 Plug 'chxuan/vimplus-startify'
 Plug 'preservim/tagbar'
-Plug 'Valloric/YouCompleteMe'
+"Plug 'neoclide/coc.vim',{'branch':'release'}
+Plug 'ycm-core/YouCompleteMe',
 Plug 'Yggdroot/LeaderF'
 Plug 'mileszs/ack.vim'
 Plug 'easymotion/vim-easymotion'

@@ -121,6 +121,30 @@ nnoremap <c-k> <c-w>k
 nnoremap <c-h> <c-w>h
 nnoremap <c-l> <c-w>l
 
+nnoremap <A-j> <c-w>j
+nnoremap <A-k> <c-w>k
+nnoremap <A-h> <c-w>h
+nnoremap <A-l> <c-w>l
+
+nnoremap <leader>j <c-w>j
+nnoremap <leader>k <c-w>k
+nnoremap <leader>h <c-w>h
+nnoremap <leader>l <c-w>l
+
+" 替换方向键为调节分屏大小
+map <M-up> :res -5<CR>
+map <M-down> :res +5<CR>
+map <M-left> :vertical resize-5<CR>
+map <M-right> :vertical resize+5<CR>
+
+inoremap jk <ESC> 
+
+" 按键映射
+map W :w<CR>
+map Q :wq<CR>
+map tq :q!<CR>
+map te :terminal<CR>
+
 " 复制当前选中到系统剪切板
 vmap <leader><leader>y "+y
 

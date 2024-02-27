@@ -9,6 +9,10 @@ let g:airline_left_sep = ''
 let g:airline_left_alt_sep = ''
 let g:airline_right_sep = ''
 let g:airline_right_alt_sep = ''
+"section_y显示时间
+let g:airline_section_y = airline#section#create(['%{strftime("%D")}'])
+"section_z显示日期
+let g:airline_section_z = airline#section#create(['%{strftime("%H:%M")}'])
 
 " cpp-mode
 nnoremap <leader>y :CopyCode<cr>
@@ -88,6 +92,16 @@ nmap <F5> :YcmDiags<cr>
 " tagbar
 let g:tagbar_width = 30
 nnoremap <silent> <leader>t :TagbarToggle<cr>
+"设置tagber对于markdown的支持
+let g:tagbar_type_markdown = {
+    \ 'ctagstype' : 'markdown',
+    \ 'kinds' : [
+        \ 'h:Chapter',
+        \ 'i:Section',
+        \ 'k:Paragraph',
+        \ 'j:Subparagraph'
+    \ ]
+\ }
 
 " incsearch.vim
 map /  <Plug>(incsearch-forward)
@@ -141,6 +155,39 @@ noremap <silent> <c-f> :call smooth_scroll#down(&scroll*2, 0, 4)<CR>
 nnoremap <leader>g :GV<cr>
 nnoremap <leader>G :GV!<cr>
 nnoremap <leader>gg :GV?<cr>
+
+"md-img-paste
+let g:mdip_imgdir = 'pic'
+let g:mdip_imgname = 'pic'
+autocmd FileType markdown nnoremap <silent> <C-p> :call mdip#MarkdownClipboardImage()<CR>F%i
+
+" markdown
+let g:vim_markdown_math = 1
+function RToc()
+    exe "/-toc .* -->"
+    let lstart=line('.')
+    exe "/-toc -->"
+    let lnum=line('.')
+    execute lstart.",".lnum."g/           /d"
+endfunction
+" 指定浏览器路径
+let g:mkdp_path_to_chrome = "path/of/chromium"
+" 指定预览主题，默认Github
+let g:mkdp_markdown_css=''
+
+" ultisnippet
+"设置tab键为触发键
+let g:UltiSnipsExpandTrigger = '<tab>'
+"设置向后跳转键
+let g:UltiSnipsJumpForwardTrigger = '<tab>' 
+"设置向前跳转键
+let g:UltiSnipsJumpBackwardTrigger = '<S-tab>' 
+"设置文件目录
+let g:UltiSnipsSnippetDirectories=["path/of/snippetDirectories"]
+"设置打开配置文件时为垂直打开
+let g:UltiSnipsEditSplit="vertical"
+
+
 
 " 加载自定义配置
 if filereadable(expand($HOME . '/.vimrc.custom.config'))

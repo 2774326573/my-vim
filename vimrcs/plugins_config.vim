@@ -171,7 +171,7 @@ function RToc()
     execute lstart.",".lnum."g/           /d"
 endfunction
 " 指定浏览器路径
-let g:mkdp_path_to_chrome = "path/of/chromium"
+let g:mkdp_path_to_chrome = "path/of/Tficefox"
 " 指定预览主题，默认Github
 let g:mkdp_markdown_css=''
 
@@ -183,9 +183,10 @@ let g:UltiSnipsJumpForwardTrigger = '<tab>'
 "设置向前跳转键
 let g:UltiSnipsJumpBackwardTrigger = '<S-tab>' 
 "设置文件目录
-let g:UltiSnipsSnippetDirectories=["path/of/snippetDirectories"]
+let g:mkdp_browser='/usr/bin/firefox'
 "设置打开配置文件时为垂直打开
 let g:UltiSnipsEditSplit="vertical"
+let g:vim_markdown_folding_disabled=1
 
 
 

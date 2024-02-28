@@ -50,7 +50,19 @@ Plug 'godlygeek/tabular' "必要插件，安装在vim-markdown前面
 Plug 'plasticboy/vim-markdown'
 Plug 'mzlogin/vim-markdown-toc'
 Plug 'iamcco/markdown-preview.nvim'
+Plug 'iamcco/mathjax-support-for-mkdp'
 Plug 'SirVer/ultisnips'
+"vim-markdown-composer
+function! BuildComposer(info)
+  if a:info.status != 'unchanged' || a:info.force
+    if has('nvim')
+      !cargo build --release --locked
+    else
+      !cargo build --release --locked --no-default-features --features json-rpc
+    endif
+  endif
+endfunction
+Plug 'euclio/vim-markdown-composer', { 'do': function('BuildComposer') }
 
 " 加载自定义插件
 if filereadable(expand($HOME . '/.vimrc.custom.plugins'))

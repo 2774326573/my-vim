@@ -175,6 +175,55 @@ let g:mkdp_path_to_chrome = "path/of/Tficefox"
 " 指定预览主题，默认Github
 let g:mkdp_markdown_css=''
 
+" vim-markdown-composer
+" markdown-composer
+let g:markdown_composer_external_renderer='pandoc -f markdown -t html'
+let g:markdown_composer_autostart = 0
+
+nmap <silent><nowait><leader>ms :<C-u>ComposerStart<CR>
+nmap <silent><nowait><leader>mu :<C-u>ComposerUpdate<CR>
+nmap <silent><nowait><leader>mo :<C-u>ComposerOpen<CR>
+nmap <silent><nowait><leader>mj :<C-u>ComposerJob<CR>
+
+let g:which_key_map2.m = {
+      \ 'name' : '+markdown_preview',
+      \ 's' : 'start',
+      \ 'u' : 'update',
+      \ 'o' : 'open another tab',
+      \ 'j' : 'echoes the channel that the plugin is listening on'
+      \}
+let g:mkdp_browserfunc = 'MKDP_browserfunc_default'
+" vim 回调函数, 参数为要打开的 url
+
+let g:mkdp_auto_start = 1
+" 设置为 1 可以在打开 markdown 文件的时候自动打开浏览器预览，只在打开
+" markdown 文件的时候打开一次
+
+let g:mkdp_auto_open = 1
+" 设置为 1 在编辑 markdown 的时候检查预览窗口是否已经打开，否则自动打开预
+" 览窗口
+
+let g:mkdp_auto_close = 1
+" 在切换 buffer 的时候自动关闭预览窗口，设置为 0 则在切换 buffer 的时候不
+" 自动关闭预览窗口
+
+let g:mkdp_refresh_slow = 0
+" 设置为 1 则只有在保存文件，或退出插入模式的时候更新预览，默认为 0，实时
+" 更新预览
+
+let g:mkdp_command_for_global = 0
+" 设置为 1 则所有文件都可以使用 MarkdownPreview 进行预览，默认只有 markdown
+" 文件可以使用改命令
+
+let g:mkdp_open_to_the_world = 0
+" 设置为 1, 在使用的网络中的其他计算机也能访问预览页面
+" 默认只监听本地（127.0.0.1），其他计算机不能访问
+
+" 普通模式
+nmap <silent> <F8> <Plug>MarkdownPreview        
+" 插入模式
+imap <silent> <F8> <Plug>MarkdownPreview       
+
 " ultisnippet
 "设置tab键为触发键
 let g:UltiSnipsExpandTrigger = '<tab>'

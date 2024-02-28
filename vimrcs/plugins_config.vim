@@ -185,13 +185,13 @@ nmap <silent><nowait><leader>mu :<C-u>ComposerUpdate<CR>
 nmap <silent><nowait><leader>mo :<C-u>ComposerOpen<CR>
 nmap <silent><nowait><leader>mj :<C-u>ComposerJob<CR>
 
-let g:which_key_map2.m = {
-      \ 'name' : '+markdown_preview',
-      \ 's' : 'start',
-      \ 'u' : 'update',
-      \ 'o' : 'open another tab',
-      \ 'j' : 'echoes the channel that the plugin is listening on'
-      \}
+" let g:which_key_map2.m = {
+"       \ 'name' : '+markdown_preview',
+"       \ 's' : 'start',
+"       \ 'u' : 'update',
+"       \ 'o' : 'open another tab',
+"       \ 'j' : 'echoes the channel that the plugin is listening on'
+"       \}
 let g:mkdp_browserfunc = 'MKDP_browserfunc_default'
 " vim 回调函数, 参数为要打开的 url
 

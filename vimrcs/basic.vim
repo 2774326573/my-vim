@@ -98,8 +98,8 @@ endfunction
 command! -nargs=1 -bar UnPlug call s:deregister(<args>)
 " 编辑vimrc相关配置文件
 nnoremap <leader>e :edit $MYVIMRC<cr>
-nnoremap <leader>vc :edit ~/.vimrc.custom.config<cr>
-nnoremap <leader>vp :edit ~/.vimrc.custom.plugins<cr>
+nnoremap <leader>vc :edit ~/my-vim/vimrcs/plugins_config.vim<cr>
+nnoremap <leader>vp :edit ~/my-vim/vimrcs/plugins.vim<cr>
 
 " 查看vimplus的help文件
 nnoremap <leader>h :view +let\ &l:modifiable=0 ~/.vimplus/help.md<cr>

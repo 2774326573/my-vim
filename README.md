@@ -44,7 +44,7 @@ cpp-mode
 | nnoremap   | \<leader>\<leader>t dd| 生成try-catch代码块|
 | nnoremap   | \<leader>\<leader>t d| 生成try-catch代码块|
 
-change-colorscheme
+change-colorscheme(变化主题）
 
 | 模式    | 快捷键    | 备注    |
 |:-------------- | :-------------: | :-------------- |
@@ -57,7 +57,7 @@ change-colorscheme
 | nnoremap   | \<silent> \<F12>| 显示的主题信息|
 | inoremap   | \<silent> \<F11> \<esc>| 显示主题信息|
 
-vim-buffer
+vim-buffer(缓存区)
 
 | 模式    | 快捷键    | 备注    |
 |:-------------- | :-------------: | :-------------- |
@@ -66,7 +66,7 @@ vim-buffer
 | nnoremap   | \<silent> \<leader>d| 关闭buffer|
 | nnoremap   | \<silent> \<leader>D| :BufOnly|
 
-vim-edit
+vim-edit(vim—文本编辑器)
 
 | 模式    | 快捷键    | 备注    |
 |:-------------- | :-------------: | :-------------- |
@@ -85,7 +85,18 @@ YCM(代码自动补全)
 
 | 模式    | 快捷键    | 备注    |
 |:-------------- | :-------------: | :-------------- |
-| nnoremap   |  \<leader>u| 函数跳转|
-| nnoremap   |  \<leader>o| 头文件跳转|
-| nnoremap   |  \<leader>o| 头文件跳转|
+| nnoremap   |  \<leader>u| 查找光标下的的标识符并跳转到其声明|
+| nnoremap   |  \<leader>o| 查找当前头文件并跳转|
+| nnoremap   |  \<leader>o| 修复错误或警告|
+| nmap   |  \<F5>| 检测错误或警告并提示|
+
+tagbar
+
+| 模式    | 快捷键    | 备注    |
+|:-------------- | :-------------: | :-------------- |
+| nnoremap   | \<silent> \<leader>t| 查找光标下的的标识符并跳转到其声明|
+
+incsearch.vim
+
+ 
 

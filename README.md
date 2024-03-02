@@ -65,3 +65,27 @@ vim-buffer
 | nnoremap   | \<silent> \<C-n>| 下一个的buffer|
 | nnoremap   | \<silent> \<leader>d| 关闭buffer|
 | nnoremap   | \<silent> \<leader>D| :BufOnly|
+
+vim-edit
+
+| 模式    | 快捷键    | 备注    |
+|:-------------- | :-------------: | :-------------- |
+| nnoremap   | Y| 复制文本|
+| nnoremap   | D| 删除文本|
+| nnoremap   | C| ChangeText|
+| nnoremap   | \<leader>r| ReplaceTo<space>|
+
+nerdtree(文件树管理器)
+
+| 模式    | 快捷键    | 备注    |
+|:-------------- | :-------------: | :-------------- |
+| nnoremap   | \<silent> \<leader>m| 打开文件树|
+
+YCM(代码自动补全)
+
+| 模式    | 快捷键    | 备注    |
+|:-------------- | :-------------: | :-------------- |
+| nnoremap   |  \<leader>u| 函数跳转|
+| nnoremap   |  \<leader>o| 头文件跳转|
+| nnoremap   |  \<leader>o| 头文件跳转|
+

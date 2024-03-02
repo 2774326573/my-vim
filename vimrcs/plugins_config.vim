@@ -50,7 +50,7 @@ nnoremap C :ChangeText<cr>
 nnoremap <leader>r :ReplaceTo<space>
 
 " nerdtree
-nnoremap <silent> <leader>n :NERDTreeToggle<cr>
+nnoremap <silent> <leader>m :NERDTreeToggle<cr>
 let g:NERDTreeFileExtensionHighlightFullName = 1
 let g:NERDTreeExactMatchHighlightFullName = 1
 let g:NERDTreePatternMatchHighlightFullName = 1

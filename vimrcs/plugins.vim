@@ -63,6 +63,9 @@ function! BuildComposer(info)
   endif
 endfunction
 Plug 'euclio/vim-markdown-composer', { 'do': function('BuildComposer') }
+Plug 'alpertuna/vim-header-hard-things'
+Plug 'pbondoer/vim-42header'
+
 
 " 加载自定义插件
 if filereadable(expand($HOME . '/.vimrc.custom.plugins'))

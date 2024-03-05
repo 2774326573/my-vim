@@ -38,8 +38,8 @@ inoremap <silent> <F12> <esc> :ShowColorScheme<cr>
 let g:prepare_code_plugin_path = expand($HOME . "/.vim/plugged/prepare-code")
 
 " vim-buffer
-nnoremap <silent> <c-p> :PreviousBuffer<cr>
-nnoremap <silent> <c-n> :NextBuffer<cr>
+nnoremap <silent> <c-h> :PreviousBuffer<cr>
+nnoremap <silent> <c-l> :NextBuffer<cr>
 nnoremap <silent> <leader>d :CloseBuffer<cr>
 nnoremap <silent> <leader>D :BufOnly<cr>
 

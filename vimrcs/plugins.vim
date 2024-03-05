@@ -49,6 +49,7 @@ Plug 'ferrine/md-img-paste.vim'
 Plug 'godlygeek/tabular' "必要插件，安装在vim-markdown前面
 Plug 'plasticboy/vim-markdown'
 Plug 'mzlogin/vim-markdown-toc'
+Plug 'morhetz/gruvbox'
 Plug 'iamcco/markdown-preview.nvim'
 Plug 'iamcco/mathjax-support-for-mkdp'
 Plug 'SirVer/ultisnips'
@@ -70,3 +71,4 @@ if filereadable(expand($HOME . '/.vimrc.custom.plugins'))
 endif
 
 call plug#end()
+autocmd vimenter * nested colorscheme gruvbox

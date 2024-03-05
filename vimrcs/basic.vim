@@ -32,7 +32,7 @@ set tabstop=4            " 设置编辑时制表符占用空格数
 set shiftwidth=4         " 设置格式化时制表符占用空格数
 set softtabstop=4        " 设置4个空格为制表符
 set smarttab             " 在行和段开始处使用制表符
-set nowrap               " 禁止折行
+set wrap               " 禁止折行
 set backspace=2          " 使用回车键正常处理indent,eol,start等
 set sidescroll=10        " 设置向右滚动字符数
 set nofoldenable         " 禁用折叠代码
@@ -100,6 +100,7 @@ command! -nargs=1 -bar UnPlug call s:deregister(<args>)
 nnoremap <leader>e :edit $MYVIMRC<cr>
 nnoremap <leader>vc :edit ~/my-vim/vimrcs/plugins_config.vim<cr>
 nnoremap <leader>vp :edit ~/my-vim/vimrcs/plugins.vim<cr>
+nnoremap <leader>vb :edit ~/my-vim/vimrcs/basic.vim<cr>
 
 " 查看vimplus的help文件
 nnoremap <leader>h :view +let\ &l:modifiable=0 ~/.vimplus/help.md<cr>
@@ -116,23 +117,23 @@ nnoremap <leader><leader>u :PlugUpdate<cr>
 nnoremap <leader><leader>c :PlugClean<cr>
 
 " 分屏窗口移动
-nnoremap <leader>j <c-w>j
-nnoremap <leader>k <c-w>k
-nnoremap <leader>h <c-w>h
-nnoremap <leader>l <c-w>l
+nnoremap <A-j> <c-w>j
+nnoremap <A-k> <c-w>k
+nnoremap <A-h> <c-w>h
+nnoremap <A-l> <c-w>l
 
 " 替换方向键为调节分屏大小
 map <C-up> :res -5<CR>
 map <C-down> :res +5<CR>
-map <C-left> :vertical resize-5<CR>
-map <C-right> :vertical resize+5<CR>
+map <C-left> :vertical resize+5<CR>
+map <C-right> :vertical resize-5<CR>
 
 inoremap jk <ESC> 
 
 " 按键映射
-map <leader>w :w<CR>
-map <leader>q :wq<CR>
-map tq :q!<CR>
+map ww :w<CR>
+map <leader>q :q!<CR>
+map qq :wqa!<CR>
 map te :terminal<CR>
 
 " 复制当前选中到系统剪切板

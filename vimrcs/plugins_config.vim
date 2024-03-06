@@ -171,7 +171,7 @@ function RToc()
     execute lstart.",".lnum."g/           /d"
 endfunction
 " 指定浏览器路径
-let g:mkdp_path_to_chrome = "path/of/Tficefox"
+let g:mkdp_path_to_chrome = "usr/bin/firefox"
 " 指定预览主题，默认Github
 let g:mkdp_markdown_css=''
 

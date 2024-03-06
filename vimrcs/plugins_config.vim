@@ -141,7 +141,7 @@ nnoremap <leader>F :Ack!<space>
 " echodoc.vim
 let g:echodoc_enable_at_startup = 1
 
-" tabular
+" tabular对齐插件
 nnoremap <leader>l :Tab /\|<cr>
 nnoremap <leader>= :Tab /=<cr>
 

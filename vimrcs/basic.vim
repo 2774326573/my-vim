@@ -35,7 +35,10 @@ set smarttab             " 在行和段开始处使用制表符
 set wrap               " 禁止折行
 set backspace=2          " 使用回车键正常处理indent,eol,start等
 set sidescroll=10        " 设置向右滚动字符数
-set nofoldenable         " 禁用折叠代码
+set foldenable         " 启用折叠代码
+set foldmethod=marker
+au BufWinLeave  silent mkview
+au BufWinEnter  silent loadview
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " 代码补全

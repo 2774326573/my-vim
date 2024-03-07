@@ -37,7 +37,7 @@ jk == \<ESC>
 
 ## plugs-config(插件)快捷键映射
 
-cpp-mode
+<font color=red>cpp-mode</font>
 
 | 模式    | 快捷键    | 备注    |
 |:-------------- | :-------------: | :-------------- |

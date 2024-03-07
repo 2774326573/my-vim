@@ -50,7 +50,8 @@ Plug 'godlygeek/tabular' "必要插件，安装在vim-markdown前面
 Plug 'plasticboy/vim-markdown'
 Plug 'mzlogin/vim-markdown-toc'
 Plug 'morhetz/gruvbox'
-Plug 'iamcco/markdown-preview.nvim'
+Plug 'iamcco/markdown-preview.vim'
+Plug 'instant-markdown/vim-instant-markdown',{'for':'markdown','do': 'yarn install'}
 Plug 'iamcco/mathjax-support-for-mkdp'
 Plug 'SirVer/ultisnips'
 "vim-markdown-composer

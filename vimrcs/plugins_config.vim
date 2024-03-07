@@ -190,8 +190,9 @@ nmap <silent><nowait><leader>mj :<C-u>ComposerJob<CR>
 "       \ 's' : 'start',
 "       \ 'u' : 'update',
 "       \ 'o' : 'open another tab',
-"       \ 'j' : 'echoes the channel that the plugin is listening on'
+"       \ 'j' : 'echoes the channel that the plugin is listening on',
 "       \}
+
 let g:mkdp_browserfunc = 'MKDP_browserfunc_default'
 " vim 回调函数, 参数为要打开的 url
 

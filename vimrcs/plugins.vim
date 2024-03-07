@@ -50,7 +50,6 @@ Plug 'godlygeek/tabular' "必要插件，安装在vim-markdown前面
 Plug 'plasticboy/vim-markdown'
 Plug 'mzlogin/vim-markdown-toc'
 Plug 'morhetz/gruvbox'
-Plug 'iamcco/markdown-preview.nvim'
 Plug 'iamcco/mathjax-support-for-mkdp'
 Plug 'SirVer/ultisnips'
 "vim-markdown-composer
@@ -64,6 +63,8 @@ function! BuildComposer(info)
   endif
 endfunction
 Plug 'euclio/vim-markdown-composer', { 'do': function('BuildComposer') }
+Plug 'suan/vim-instant-markdown'
+Plug 'iamcco/markdown-preview.nvim', { 'do': { -> mkdp#util#install() }, 'for': ['markdown', 'vim-plug']}
 Plug 'alpertuna/vim-header-hard-things'
 Plug 'pbondoer/vim-42header'
 

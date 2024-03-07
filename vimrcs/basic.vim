@@ -107,7 +107,13 @@ let g:mkdp_auto_start=1"markdown preview全部自动"
 let g:mkdp_auto_open=1
 let g:mkdp_auto_close=1
 let g:mdip_imgdir='.'"image paste的文件夾目录"
+let g:vim_markdown_folding_disabled=1
+let g:vim_markdown_frontmatter_disabled=1
+let g:vim_markdown_new_window=1
+let g:vim_markdown_browser_open_command="xdg-open"
 autocmd FileType markdown nmap <buffer><silent><leader>i :call mdip#MarkdownClipboardImage()<CR>
+" 这里将markdown预览所使用的浏览器指定为firefix
+let g:mkdp_browser = '/usr/bin/firefox'
 
 "
 " 编辑vimrc相关配置文件

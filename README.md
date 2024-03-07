@@ -1,5 +1,11 @@
-[toc]
 
+<!-- vim-markdown-toc Marked -->
+
+* [my-vim快捷键映射](#my-vim快捷键映射)
+    * [basic(基础)快捷键](#basic(基础)快捷键)
+    * [plugs-config(插件)快捷键映射](#plugs-config(插件)快捷键映射)
+
+<!-- vim-markdown-toc -->
 # my-vim快捷键映射
 
 ## basic(基础)快捷键

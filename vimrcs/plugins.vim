@@ -47,6 +47,7 @@ Plug 'rhysd/clever-f.vim'
 Plug 'vim-scripts/indentpython.vim'
 Plug 'ferrine/md-img-paste.vim'
 Plug 'godlygeek/tabular' "必要插件，安装在vim-markdown前面
+Plug 'craigmac/vim-mermaid' 
 Plug 'plasticboy/vim-markdown'
 Plug 'mzlogin/vim-markdown-toc'
 Plug 'morhetz/gruvbox'
@@ -67,7 +68,7 @@ endfunction
 Plug 'euclio/vim-markdown-composer', { 'do': function('BuildComposer') }
 Plug 'suan/vim-instant-markdown'
 Plug 'iamcco/markdown-preview.nvim', { 'do': { -> mkdp#util#install() }, 'for': ['markdown', 'vim-plug']}
-Plug 'alpertuna/vim-header-hard-things'
+" Plug 'alpertuna/vim-header-hard-things'
 Plug 'pbondoer/vim-42header'
 
 

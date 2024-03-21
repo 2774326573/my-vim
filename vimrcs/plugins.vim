@@ -55,6 +55,7 @@ Plug 'iamcco/markdown-preview.vim'
 Plug 'instant-markdown/vim-instant-markdown',{'for':'markdown','do': 'yarn install'}
 Plug 'iamcco/mathjax-support-for-mkdp'
 Plug 'SirVer/ultisnips'
+Plug 'keelii/vim-snippets'
 "vim-markdown-composer
 function! BuildComposer(info)
   if a:info.status != 'unchanged' || a:info.force

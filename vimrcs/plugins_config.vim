@@ -126,7 +126,6 @@ let g:NERDTreeGitStatusIndicatorMapCustom = {
             \ 'Ignored'   : '☒',
             \ "Unknown"   : "?"
             \ }
-
 " LeaderF
 nnoremap <leader>f :LeaderfFile .<cr>
 let g:Lf_WildIgnore = {
@@ -232,6 +231,7 @@ let g:UltiSnipsExpandTrigger = '<tab>'
 let g:UltiSnipsJumpForwardTrigger = '<tab>' 
 "设置向前跳转键
 let g:UltiSnipsJumpBackwardTrigger = '<S-tab>' 
+
 "设置文件目录
 let g:mkdp_browser='/usr/bin/firefox'
 "设置打开配置文件时为垂直打开
@@ -239,8 +239,16 @@ let g:UltiSnipsEditSplit="vertical"
 let g:vim_markdown_folding_disabled=1
 
 
+"ble this plugin for filetypes, '*' for all files.
+let g:apc_enable_ft = {'text':1,'markdown':1,'c':1,'c51':1,'cpp':1,'vim':1,'python':1}
+"" source for dictionary, current or other loaded buffers, see ':help cpt'
+set cpt=.,k,w,b
 
-" 加载自定义配置
+" don't select the first item.
+set completeopt=menu,menuone,noselect
+"" suppress annoy messages.
+set shortmess+=c"
+" "加载自定义配置
 if filereadable(expand($HOME . '/.vimrc.custom.config'))
     source $HOME/.vimrc.custom.config
 endif

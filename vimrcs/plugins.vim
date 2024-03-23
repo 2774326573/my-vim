@@ -62,16 +62,6 @@ Plug 'skywind3000/vim-auto-popmenu'
 Plug 'skywind3000/vim-dict'
 Plug 'SirVer/ultisnips'
 Plug 'keelii/vim-snippets'
-" make YCM compatible with UltiSnips (using supertab)
-let g:ycm_key_list_select_completion = ['<C-n>', '<Down>']
-let g:ycm_key_list_previous_completion = ['<C-p>', '<Up>']
-let g:SuperTabDefaultCompletionType = '<C-n>'
-
-let g:UltiSnipsSnippetDirectories = ['~/my-vim/.vim/plugged/vim-snippets/UltiSnips', 'UltiSnips','Mysnippets']
-let g:UltiSnipsExpandTrigger = "<tab>"
-let g:UltiSnipsJumpForwardTrigger = "<tab>"
-let g:UltiSnipsJumpBackwardTrigger = "<s-tab>"
-let g:UltiSnipsEditSplit= "vertical"
 
 " vim-markdown-composer
 "function! BuildComposer(info)

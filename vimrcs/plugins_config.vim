@@ -231,12 +231,20 @@ let g:UltiSnipsExpandTrigger = '<tab>'
 let g:UltiSnipsJumpForwardTrigger = '<tab>' 
 "设置向前跳转键
 let g:UltiSnipsJumpBackwardTrigger = '<S-tab>' 
-<<<<<<< HEAD
 let g:UltiSnipsEditSplit="vertical"
 let g:UltiSnipsSnippetDirectories=[$HOME.'my-vim/.vim/plugged/vim-snippets/UltiSnips']
 let g:UltiSnipsSnippetDirectories=["UltiSnips","mysnippets"]
-=======
->>>>>>> 13565bf18872988f895b40d330ea40d856a235fb
+
+" make YCM compatible with UltiSnips (using supertab)
+let g:ycm_key_list_select_completion = ['<C-n>', '<Down>']
+let g:ycm_key_list_previous_completion = ['<C-p>', '<Up>']
+let g:SuperTabDefaultCompletionType = '<C-n>'
+
+let g:UltiSnipsSnippetDirectories = ['~/my-vim/.vim/plugged/vim-snippets/UltiSnips', 'UltiSnips','Mysnippets']
+let g:UltiSnipsExpandTrigger = "<tab>"
+let g:UltiSnipsJumpForwardTrigger = "<tab>"
+let g:UltiSnipsJumpBackwardTrigger = "<s-tab>"
+let g:UltiSnipsEditSplit= "vertical"
 
 "设置文件目录
 let g:mkdp_browser='/usr/bin/firefox'

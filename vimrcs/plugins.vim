@@ -14,8 +14,8 @@ Plug 'chxuan/prepare-code'
 Plug 'chxuan/vim-buffer'
 Plug 'chxuan/vimplus-startify'
 Plug 'preservim/tagbar'
-"Plug 'neoclide/coc.vim',{'branch':'release'}
-Plug 'ycm-core/YouCompleteMe',
+Plug 'neoclide/coc.nvim',{'branch':'release'}
+" Plug 'ycm-core/YouCompleteMe',
 Plug 'Yggdroot/LeaderF'
 Plug 'mileszs/ack.vim'
 Plug 'easymotion/vim-easymotion'

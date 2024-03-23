@@ -232,10 +232,13 @@ let g:UltiSnipsExpandTrigger = '<tab>'
 let g:UltiSnipsJumpForwardTrigger = '<tab>' 
 "设置向前跳转键
 let g:UltiSnipsJumpBackwardTrigger = '<S-tab>' 
+let g:UltiSnipsEditSplit="vertical"
+let g:UltiSnipsSnippetDirectories=[$HOME.'my-vim/.vim/plugged/vim-snippets/UltiSnips']
+let g:UltiSnipsSnippetDirectories=["UltiSnips","mysnippets"]
+
 "设置文件目录
 let g:mkdp_browser='/usr/bin/firefox'
 "设置打开配置文件时为垂直打开
-let g:UltiSnipsEditSplit="vertical"
 let g:vim_markdown_folding_disabled=1
 
 

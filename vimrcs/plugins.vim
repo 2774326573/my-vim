@@ -19,7 +19,7 @@ Plug 'neoclide/coc.nvim',{'branch':'release'}
 Plug 'Yggdroot/LeaderF'
 Plug 'mileszs/ack.vim'
 "Plug 'neoclide/coc.vim',{'branch':'release'}
-Plug 'ycm-core/YouCompleteMe'
+" Plug 'ycm-core/YouCompleteMe'
 "Plug 'Yggdroot/LeaderF'
 "Plug 'mileszs/ack.vim'
 Plug 'easymotion/vim-easymotion'
@@ -58,7 +58,7 @@ Plug 'morhetz/gruvbox'
 " Plug 'iamcco/markdown-preview.vim'
 "Plug 'instant-markdown/vim-instant-markdown',{'for':'markdown','do': 'yarn install'}
 Plug 'iamcco/mathjax-support-for-mkdp'
-Plug 'skywind3000/vim-auto-popmenu'
+" Plug 'skywind3000/vim-auto-popmenu'
 Plug 'skywind3000/vim-dict'
 Plug 'SirVer/ultisnips'
 Plug 'keelii/vim-snippets'

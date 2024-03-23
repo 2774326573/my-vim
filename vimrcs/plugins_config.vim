@@ -59,36 +59,6 @@ let g:NERDTreeHighlightFoldersFullName = 1
 let g:NERDTreeDirArrowExpandable='▷'
 let g:NERDTreeDirArrowCollapsible='▼'
 
-" YCM
-" 如果不指定python解释器路径，ycm会自己搜索一个合适的(与编译ycm时使用的python版本匹配)
-" let g:ycm_server_python_interpreter = '/usr/bin/python2.7'
-let g:ycm_confirm_extra_conf = 0 
-let g:ycm_error_symbol = '✗'
-let g:ycm_warning_symbol = '✹'
-let g:ycm_seed_identifiers_with_syntax = 1 
-let g:ycm_complete_in_comments = 1 
-let g:ycm_complete_in_strings = 1 
-let g:ycm_collect_identifiers_from_tags_files = 1
-let g:ycm_semantic_triggers =  {
-            \   'c' : ['->', '.','re![_a-zA-z0-9]'],
-            \   'objc' : ['->', '.', 're!\[[_a-zA-Z]+\w*\s', 're!^\s*[^\W\d]\w*\s',
-            \             're!\[.*\]\s'],
-            \   'ocaml' : ['.', '#'],
-            \   'cpp,objcpp' : ['->', '.', '::','re![_a-zA-Z0-9]'],
-            \   'perl' : ['->'],
-            \   'php' : ['->', '::'],
-            \   'cs,java,javascript,typescript,d,python,perl6,scala,vb,elixir,go' : ['.'],
-            \   'ruby' : ['.', '::'],
-            \   'lua' : ['.', ':'],
-            \   'erlang' : [':'],
-            \ }
-nnoremap <leader>u :YcmCompleter GoToDeclaration<cr>
-" 已经使用cpp-mode插件提供的转到函数实现的功能
-" nnoremap <leader>i :YcmCompleter GoToDefinition<cr> 
-nnoremap <leader>o :YcmCompleter GoToInclude<cr>
-nnoremap <leader>ff :YcmCompleter FixIt<cr>
-nmap <F5> :YcmDiags<cr>
-
 " tagbar
 let g:tagbar_width = 30
 nnoremap <silent> <leader>t :TagbarToggle<cr>
@@ -218,6 +188,10 @@ let g:mkdp_command_for_global = 0
 let g:mkdp_open_to_the_world = 0
 " 设置为 1, 在使用的网络中的其他计算机也能访问预览页面
 " 默认只监听本地（127.0.0.1），其他计算机不能访问
+"设置文件目录
+let g:mkdp_browser='/usr/bin/firefox'
+"设置打开配置文件时为垂直打开
+let g:vim_markdown_folding_disabled=1
 
 " 普通模式
 nmap <silent> <F8> <Plug>MarkdownPreview        
@@ -240,17 +214,15 @@ let g:ycm_key_list_select_completion = ['<C-n>', '<Down>']
 let g:ycm_key_list_previous_completion = ['<C-p>', '<Up>']
 let g:SuperTabDefaultCompletionType = '<C-n>'
 
-let g:UltiSnipsSnippetDirectories = ['~/my-vim/.vim/plugged/vim-snippets/UltiSnips', 'UltiSnips','Mysnippets']
+let g:UltiSnipsSnippetDirectories = ['~/my-vim/.vim/plugged/vim-snippets/UltiSnips', 'UltiSnips','mysnippets']
 let g:UltiSnipsExpandTrigger = "<tab>"
 let g:UltiSnipsJumpForwardTrigger = "<tab>"
 let g:UltiSnipsJumpBackwardTrigger = "<s-tab>"
 let g:UltiSnipsEditSplit= "vertical"
 
-"设置文件目录
-let g:mkdp_browser='/usr/bin/firefox'
-"设置打开配置文件时为垂直打开
-let g:vim_markdown_folding_disabled=1
 
+" Coc.nvim
+let g:coc_global_extensions = ['coc-json', 'coc-tsserver', 'coc-pyright', 'coc-markdown', 'coc-c', 'coc-cpp']
 
 "ble this plugin for filetypes, '*' for all files.
 let g:apc_enable_ft = {'text':1,'markdown':1,'c':1,'c51':1,'cpp':1,'vim':1,'python':1}

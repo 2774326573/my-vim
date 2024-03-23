@@ -222,7 +222,7 @@ let g:UltiSnipsEditSplit= "vertical"
 
 
 " Coc.nvim
-let g:coc_global_extensions = ['coc-json', 'coc-tsserver', 'coc-pyright', 'coc-markdown', 'coc-c', 'coc-cpp']
+let g:coc_global_extensions = ['coc-json', 'coc-tsserver', 'coc-pyright', 'coc-markdownlint', 'coc-clangd']
 
 "ble this plugin for filetypes, '*' for all files.
 let g:apc_enable_ft = {'text':1,'markdown':1,'c':1,'c51':1,'cpp':1,'vim':1,'python':1}

@@ -5,7 +5,7 @@ filetype plugin indent on
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " 插件列表
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-call plug#begin('/root/my-vim/.vim/plugged')
+call plug#begin('~/my-vim/.vim/plugged')
 
 Plug 'chxuan/cpp-mode'
 Plug 'chxuan/vim-edit'
@@ -14,17 +14,14 @@ Plug 'chxuan/vim-edit'
 Plug 'chxuan/vim-buffer'
 Plug 'chxuan/vimplus-startify'
 Plug 'preservim/tagbar'
-<<<<<<< HEAD
 Plug 'neoclide/coc.nvim',{'branch':'release'}
 " Plug 'ycm-core/YouCompleteMe',
 Plug 'Yggdroot/LeaderF'
 Plug 'mileszs/ack.vim'
-=======
 "Plug 'neoclide/coc.vim',{'branch':'release'}
-"Plug 'ycm-core/YouCompleteMe',
+Plug 'ycm-core/YouCompleteMe'
 "Plug 'Yggdroot/LeaderF'
 "Plug 'mileszs/ack.vim'
->>>>>>> 13565bf18872988f895b40d330ea40d856a235fb
 Plug 'easymotion/vim-easymotion'
 Plug 'haya14busa/incsearch.vim'
 Plug 'jiangmiao/auto-pairs'
@@ -70,7 +67,7 @@ let g:ycm_key_list_select_completion = ['<C-n>', '<Down>']
 let g:ycm_key_list_previous_completion = ['<C-p>', '<Up>']
 let g:SuperTabDefaultCompletionType = '<C-n>'
 
-let g:UltiSnipsSnippetDirectories = ['/root/my-vim/.vim/plugged/vim-snippets/UltiSnips', 'UltiSnips','Mysnippets']
+let g:UltiSnipsSnippetDirectories = ['~/my-vim/.vim/plugged/vim-snippets/UltiSnips', 'UltiSnips','Mysnippets']
 let g:UltiSnipsExpandTrigger = "<tab>"
 let g:UltiSnipsJumpForwardTrigger = "<tab>"
 let g:UltiSnipsJumpBackwardTrigger = "<s-tab>"

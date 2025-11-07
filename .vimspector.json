@@ -1,0 +1,55 @@
+{
+  "configurations": {
+    "Python - Launch Current File": {
+      "adapter": "debugpy",
+      "configuration": {
+        "request": "launch",
+        "type": "python",
+        "cwd": "${workspaceRoot}",
+        "program": "${file}",
+        "stopOnEntry": false,
+        "console": "integratedTerminal",
+        "args": []
+      }
+    },
+    "Python - Attach": {
+      "adapter": "debugpy",
+      "configuration": {
+        "request": "attach",
+        "host": "localhost",
+        "port": 5678
+      }
+    },
+    "C++ - Launch": {
+      "adapter": "vscode-cpptools",
+      "configuration": {
+        "request": "launch",
+        "program": "${workspaceRoot}/a.out",
+        "args": [],
+        "cwd": "${workspaceRoot}",
+        "environment": [],
+        "externalConsole": false,
+        "MIMode": "gdb",
+        "setupCommands": [
+          {
+            "description": "Enable pretty-printing for gdb",
+            "text": "-enable-pretty-printing",
+            "ignoreFailures": true
+          }
+        ]
+      }
+    },
+    "C - Launch": {
+      "adapter": "vscode-cpptools",
+      "configuration": {
+        "request": "launch",
+        "program": "${workspaceRoot}/a.out",
+        "args": [],
+        "cwd": "${workspaceRoot}",
+        "environment": [],
+        "externalConsole": false,
+        "MIMode": "gdb"
+      }
+    }
+  }
+}

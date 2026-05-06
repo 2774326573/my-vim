@@ -1,0 +1,32 @@
+{
+  "Typed Function": {
+    "prefix": "fn",
+    "body": ["function ${1:name}(${2:param}: ${3:type}): ${4:returnType} {", "  ${0:// code}", "}"],
+    "description": "Typed function"
+  },
+  "Interface": {
+    "prefix": "interface",
+    "body": ["interface ${1:Name} {", "  ${2:property}: ${3:type};", "}"],
+    "description": "Interface"
+  },
+  "Type Alias": {
+    "prefix": "type",
+    "body": ["type ${1:Name} = ${0:type};"],
+    "description": "Type alias"
+  },
+  "Class": {
+    "prefix": "class",
+    "body": ["class ${1:ClassName} {", "  constructor(${2:params}) {", "    ${0:// init}", "  }", "}"],
+    "description": "Class"
+  },
+  "Async Arrow": {
+    "prefix": "aafn",
+    "body": ["const ${1:name} = async (${2:params}): Promise<${3:void}> => {", "  ${0:// code}", "};"],
+    "description": "Async arrow function"
+  },
+  "React Component": {
+    "prefix": "rfc",
+    "body": ["type ${1:ComponentName}Props = {", "  ${2:// props}", "};", "", "export function ${1:ComponentName}(props: ${1:ComponentName}Props) {", "  return ${0:null};", "}"],
+    "description": "Typed React component"
+  }
+}

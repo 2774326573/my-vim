@@ -1,0 +1,524 @@
+
+chdir(C:\Users\jinxi\my-vim)
+sourcing "_vimrc"
+line 73: sourcing "C:\Users\jinxi\my-vim/autoload/plug.vim"
+finished sourcing C:\Users\jinxi\my-vim/autoload/plug.vim
+continuing in C:\Users\jinxi\my-vim\_vimrc
+line 99: sourcing "C:\Users\jinxi\my-vim/config/plugins.vim"
+line 88: sourcing "C:\Users\jinxi\my-vim\data\plugged\vim-polyglot\filetype.vim"
+line 1: sourcing "C:\Users\jinxi\my-vim\data\plugged\vim-polyglot\autoload\polyglot\init.vim"
+line 148: sourcing "C:\Users\jinxi\my-vim\data\plugged\vim-polyglot\filetype.vim"
+finished sourcing C:\Users\jinxi\my-vim\data\plugged\vim-polyglot\filetype.vim
+continuing in C:\Users\jinxi\my-vim\data\plugged\vim-polyglot\autoload\polyglot\init.vim
+line 148: sourcing "C:\Program Files\Vim\vim91\filetype.vim"
+line 3223: sourcing "C:\Users\jinxi\my-vim\data\plugged\vim-fugitive\ftdetect\fugitive.vim"
+finished sourcing C:\Users\jinxi\my-vim\data\plugged\vim-fugitive\ftdetect\fugitive.vim
+continuing in C:\Program Files\Vim\vim91\filetype.vim
+line 3223: sourcing "C:\Users\jinxi\my-vim\data\plugged\vim-polyglot\ftdetect\polyglot.vim"
+finished sourcing C:\Users\jinxi\my-vim\data\plugged\vim-polyglot\ftdetect\polyglot.vim
+continuing in C:\Program Files\Vim\vim91\filetype.vim
+finished sourcing C:\Program Files\Vim\vim91\filetype.vim
+continuing in C:\Users\jinxi\my-vim\data\plugged\vim-polyglot\autoload\polyglot\init.vim
+line 149: sourcing "C:\Users\jinxi\my-vim\data\plugged\vim-fugitive\ftdetect\fugitive.vim"
+finished sourcing C:\Users\jinxi\my-vim\data\plugged\vim-fugitive\ftdetect\fugitive.vim
+continuing in C:\Users\jinxi\my-vim\data\plugged\vim-polyglot\autoload\polyglot\init.vim
+line 149: sourcing "C:\Users\jinxi\my-vim\data\plugged\vim-polyglot\ftdetect\polyglot.vim"
+finished sourcing C:\Users\jinxi\my-vim\data\plugged\vim-polyglot\ftdetect\polyglot.vim
+continuing in C:\Users\jinxi\my-vim\data\plugged\vim-polyglot\autoload\polyglot\init.vim
+finished sourcing C:\Users\jinxi\my-vim\data\plugged\vim-polyglot\autoload\polyglot\init.vim
+continuing in C:\Users\jinxi\my-vim\data\plugged\vim-polyglot\filetype.vim
+finished sourcing C:\Users\jinxi\my-vim\data\plugged\vim-polyglot\filetype.vim
+continuing in plug#end
+line 88: sourcing "C:\Program Files\Vim\vim91\filetype.vim"
+finished sourcing C:\Program Files\Vim\vim91\filetype.vim
+continuing in plug#end
+line 88: sourcing "C:\Program Files\Vim\vim91\ftplugin.vim"
+finished sourcing C:\Program Files\Vim\vim91\ftplugin.vim
+continuing in plug#end
+line 88: sourcing "C:\Program Files\Vim\vim91\indent.vim"
+finished sourcing C:\Program Files\Vim\vim91\indent.vim
+continuing in plug#end
+line 91: sourcing "C:\Program Files\Vim\vim91\syntax\syntax.vim"
+line 20: sourcing "C:\Program Files\Vim\vim91\syntax\synload.vim"
+line 22: sourcing "C:\Program Files\Vim\vim91\syntax\syncolor.vim"
+line 37: sourcing "C:\Program Files\Vim\vim91\colors\lists\default.vim"
+finished sourcing C:\Program Files\Vim\vim91\colors\lists\default.vim
+continuing in C:\Program Files\Vim\vim91\syntax\syncolor.vim
+finished sourcing C:\Program Files\Vim\vim91\syntax\syncolor.vim
+continuing in C:\Program Files\Vim\vim91\syntax\synload.vim
+finished sourcing C:\Program Files\Vim\vim91\syntax\synload.vim
+continuing in C:\Program Files\Vim\vim91\syntax\syntax.vim
+Executing FileType Autocommands for "*"
+autocommand 0verbose exe "set syntax=" . expand("<amatch>")
+
+finished sourcing C:\Program Files\Vim\vim91\syntax\syntax.vim
+continuing in plug#end
+finished sourcing C:\Users\jinxi\my-vim/config/plugins.vim
+continuing in C:\Users\jinxi\my-vim\_vimrc
+line 102: sourcing "C:\Users\jinxi\my-vim/config/settings.vim"
+line 51: sourcing "C:\Users\jinxi\my-vim\autoload\myvim\path.vim"
+finished sourcing C:\Users\jinxi\my-vim\autoload\myvim\path.vim
+continuing in C:\Users\jinxi\my-vim\config\settings.vim
+line 82: sourcing "C:\Users\jinxi\my-vim\data\plugged\vim-polyglot\filetype.vim"
+finished sourcing C:\Users\jinxi\my-vim\data\plugged\vim-polyglot\filetype.vim
+continuing in C:\Users\jinxi\my-vim\config\settings.vim
+line 82: sourcing "C:\Program Files\Vim\vim91\filetype.vim"
+finished sourcing C:\Program Files\Vim\vim91\filetype.vim
+continuing in C:\Users\jinxi\my-vim\config\settings.vim
+line 82: sourcing "C:\Program Files\Vim\vim91\ftplugin.vim"
+finished sourcing C:\Program Files\Vim\vim91\ftplugin.vim
+continuing in C:\Users\jinxi\my-vim\config\settings.vim
+line 82: sourcing "C:\Program Files\Vim\vim91\indent.vim"
+finished sourcing C:\Program Files\Vim\vim91\indent.vim
+continuing in C:\Users\jinxi\my-vim\config\settings.vim
+line 83: sourcing "C:\Program Files\Vim\vim91\syntax\syntax.vim"
+line 16: sourcing "C:\Program Files\Vim\vim91\syntax/nosyntax.vim"
+Executing BufEnter Autocommands for "*"
+autocommand syn clear
+
+autocommand if exists("b:current_syntax") | unlet b:current_syntax | endif
+
+finished sourcing C:\Program Files\Vim\vim91\syntax/nosyntax.vim
+continuing in C:\Program Files\Vim\vim91\syntax\syntax.vim
+line 20: sourcing "C:\Program Files\Vim\vim91\syntax\synload.vim"
+line 22: sourcing "C:\Program Files\Vim\vim91\syntax\syncolor.vim"
+finished sourcing C:\Program Files\Vim\vim91\syntax\syncolor.vim
+continuing in C:\Program Files\Vim\vim91\syntax\synload.vim
+finished sourcing C:\Program Files\Vim\vim91\syntax\synload.vim
+continuing in C:\Program Files\Vim\vim91\syntax\syntax.vim
+Executing FileType Autocommands for "*"
+autocommand 0verbose exe "set syntax=" . expand("<amatch>")
+
+finished sourcing C:\Program Files\Vim\vim91\syntax\syntax.vim
+continuing in C:\Users\jinxi\my-vim\config\settings.vim
+finished sourcing C:\Users\jinxi\my-vim/config/settings.vim
+continuing in C:\Users\jinxi\my-vim\_vimrc
+line 105: sourcing "C:\Users\jinxi\my-vim/config/plugin-config.vim"
+line 5: sourcing "C:\Program Files\Vim\vim91\colors\lists\default.vim"
+finished sourcing C:\Program Files\Vim\vim91\colors\lists\default.vim
+continuing in C:\Users\jinxi\my-vim\config\plugin-config.vim
+line 5: sourcing "C:\Users\jinxi\my-vim\data\plugged\gruvbox\colors\gruvbox.vim"
+line 13: sourcing "C:\Program Files\Vim\vim91\syntax\syncolor.vim"
+finished sourcing C:\Program Files\Vim\vim91\syntax\syncolor.vim
+continuing in C:\Users\jinxi\my-vim\data\plugged\gruvbox\colors\gruvbox.vim
+line 15: sourcing "C:\Program Files\Vim\vim91\syntax\syncolor.vim"
+finished sourcing C:\Program Files\Vim\vim91\syntax\syncolor.vim
+continuing in C:\Users\jinxi\my-vim\data\plugged\gruvbox\colors\gruvbox.vim
+finished sourcing C:\Users\jinxi\my-vim\data\plugged\gruvbox\colors\gruvbox.vim
+continuing in C:\Users\jinxi\my-vim\config\plugin-config.vim
+line 365: sourcing "C:\Users\jinxi\my-vim\data\plugged\vim-which-key\autoload\which_key.vim"
+finished sourcing C:\Users\jinxi\my-vim\data\plugged\vim-which-key\autoload\which_key.vim
+continuing in C:\Users\jinxi\my-vim\config\plugin-config.vim
+finished sourcing C:\Users\jinxi\my-vim/config/plugin-config.vim
+continuing in C:\Users\jinxi\my-vim\_vimrc
+line 108: sourcing "C:\Users\jinxi\my-vim/config/keymaps.vim"
+                                                             n  <Space>-    * :split<CR>
+	Last set from ~\my-vim\config\keymaps.vim line 55
+n  <Space>wo   * <C-W>o
+	Last set from ~\my-vim\config\keymaps.vim line 54
+n  <Space>wv   * :vsplit<CR>
+	Last set from ~\my-vim\config\keymaps.vim line 53
+n  <Space>ws   * :split<CR>
+	Last set from ~\my-vim\config\keymaps.vim line 52
+n  <Space>wd   * <C-W>c
+	Last set from ~\my-vim\config\keymaps.vim line 51
+n  <Space>ww   * <C-W>w
+	Last set from ~\my-vim\config\keymaps.vim line 50
+n  <Space>:    * :History:<CR>
+	Last set from ~\my-vim\config\keymaps.vim line 33
+n  <Space>,    * :Buffers<CR>
+	Last set from ~\my-vim\config\keymaps.vim line 32
+n  <Space>/    * :Rg<CR>
+	Last set from ~\my-vim\config\keymaps.vim line 31
+n  <Space><Space> * :Buffers<CR>
+	Last set from ~\my-vim\config\keymaps.vim line 30
+n  <Space>fn   * :enew<CR>
+	Last set from ~\my-vim\config\keymaps.vim line 27
+n  <Space>fw   * :Windows<CR>
+	Last set from ~\my-vim\config\keymaps.vim line 26
+n  <Space>fm   * :Marks<CR>
+	Last set from ~\my-vim\config\keymaps.vim line 25
+n  <Space>fc   * :History:<CR>
+	Last set from ~\my-vim\config\keymaps.vim line 24
+n  <Space>fr   * :History<CR>
+	Last set from ~\my-vim\config\keymaps.vim line 23
+n  <Space>fh   * :Helptags<CR>
+	Last set from ~\my-vim\config\keymaps.vim line 22
+n  <Space>fb   * :Buffers<CR>
+	Last set from ~\my-vim\config\keymaps.vim line 21
+n  <Space>fg   * :Rg<CR>
+	Last set from ~\my-vim\config\keymaps.vim line 20
+n  <Space>ff   * :Files<CR>
+	Last set from ~\my-vim\config\keymaps.vim line 19
+n  <Space>nh   * :nohlsearch<CR>
+	Last set from ~\my-vim\config\keymaps.vim line 16
+n  <Space>qq   * :qa<CR>
+	Last set from ~\my-vim\config\keymaps.vim line 12
+n  <Space>x    * :x<CR>
+	Last set from ~\my-vim\config\keymaps.vim line 11
+n  <Space>Q    * :qa!<CR>
+	Last set from ~\my-vim\config\keymaps.vim line 10
+n  <Space>q    * :q<CR>
+	Last set from ~\my-vim\config\keymaps.vim line 9
+n  <Space>w    * :w<CR>
+	Last set from ~\my-vim\config\keymaps.vim line 8
+n  <Space>h    * :echo "查看完整帮助: cat ~/vimfiles/速查卡.md"<CR>
+	Last set from ~\my-vim\config\keymaps.vim line 5
+n  <Space>?    * :echo "Leader键帮助:  w=保存  q=退出  e=文件树  ff=查找  fg=搜索"<CR>
+	Last set from ~\my-vim\config\keymaps.vim line 4
+n  <Space>     * :<C-U>WhichKey ' '<CR>
+	Last set from ~\my-vim\config\plugin-config.vim line 366
+n  <Space>tx     <Plug>TranslateX
+	Last set from ~\my-vim\config\plugin-config.vim line 160
+n  <Space>tw     <Plug>Translate
+	Last set from ~\my-vim\config\plugin-config.vim line 157
+n  <Space>tr     <Plug>TranslateR
+	Last set from ~\my-vim\config\plugin-config.vim line 154
+n  <Space>tt     <Plug>TranslateW
+	Last set from ~\my-vim\config\plugin-config.vim line 151
+n  <Space>dO   * :call vimspector#StepOut()<CR>
+	Last set from ~\my-vim\config\plugin-config.vim line 132
+n  <Space>do   * :call vimspector#StepOver()<CR>
+	Last set from ~\my-vim\config\plugin-config.vim line 131
+n  <Space>di   * :call vimspector#StepInto()<CR>
+	Last set from ~\my-vim\config\plugin-config.vim line 130
+n  <Space>dc   * :call vimspector#Continue()<CR>
+	Last set from ~\my-vim\config\plugin-config.vim line 129
+n  <Space>dr   * :call vimspector#Reset()<CR>
+	Last set from ~\my-vim\config\plugin-config.vim line 128
+n  <Space>du   * :call vimspector#ToggleBreakpoint()<CR>
+	Last set from ~\my-vim\config\plugin-config.vim line 127
+n  <Space>tb   * :TagbarToggle<CR>
+	Last set from ~\my-vim\config\plugin-config.vim line 74
+Reading viminfo file "C:\Users\jinxi\my-vim/data/viminfo" marks
+Executing BufNewFile Autocommands for "*"
+autocommand if (&ft == "" || &ft == "conf") && expand("<afile>:e") == "" | call polyglot#shebang#Detect() | endif
+
+line 0: sourcing "C:\Users\jinxi\my-vim\data\plugged\vim-polyglot\autoload\polyglot\shebang.vim"
+finished sourcing C:\Users\jinxi\my-vim\data\plugged\vim-polyglot\autoload\polyglot\shebang.vim
+continuing in BufNewFile Autocommands for "*"
+Executing BufNewFile Autocommands for "*"
+autocommand if !did_filetype() && expand("<amatch>") !~ g:ft_ignore_pat | runtime! scripts.vim | endif
+
+line 0: sourcing "C:\Program Files\Vim\vim91\scripts.vim"
+line 27: sourcing "C:\Program Files\Vim\vim91\autoload\dist\script.vim"
+finished sourcing C:\Program Files\Vim\vim91\autoload\dist\script.vim
+continuing in C:\Program Files\Vim\vim91\scripts.vim
+finished sourcing C:\Program Files\Vim\vim91\scripts.vim
+continuing in BufNewFile Autocommands for "*"
+Executing BufEnter Autocommands for "*"
+autocommand call s:detect_indent()
+
+line 17: sourcing "C:\Users\jinxi\my-vim\data\plugged\vim-polyglot\autoload\polyglot\sleuth.vim"
+finished sourcing C:\Users\jinxi\my-vim\data\plugged\vim-polyglot\autoload\polyglot\sleuth.vim
+continuing in <SNR>5_detect_indent
+Executing BufWinEnter Autocommands for "*"
+autocommand if &ft == "" && expand("<afile>:e") == "" | call s:Observe() | endif
+
+finished sourcing C:\Users\jinxi\my-vim/config/keymaps.vim
+continuing in C:\Users\jinxi\my-vim\_vimrc
+finished sourcing _vimrc
+not found in 'packpath': "pack/*/start/*"
+sourcing "C:\Users\jinxi\my-vim\data\plugged\lightline.vim\plugin\lightline.vim"
+finished sourcing C:\Users\jinxi\my-vim\data\plugged\lightline.vim\plugin\lightline.vim
+sourcing "C:\Users\jinxi\my-vim\data\plugged\vim-devicons\plugin\webdevicons.vim"
+finished sourcing C:\Users\jinxi\my-vim\data\plugged\vim-devicons\plugin\webdevicons.vim
+sourcing "C:\Users\jinxi\my-vim\data\plugged\vim-startify\plugin\startify.vim"
+finished sourcing C:\Users\jinxi\my-vim\data\plugged\vim-startify\plugin\startify.vim
+sourcing "C:\Users\jinxi\my-vim\data\plugged\vim-gitgutter\plugin\gitgutter.vim"
+line 65: sourcing "C:\Users\jinxi\my-vim\data\plugged\vim-gitgutter\autoload\gitgutter\utility.vim"
+finished sourcing C:\Users\jinxi\my-vim\data\plugged\vim-gitgutter\autoload\gitgutter\utility.vim
+continuing in C:\Users\jinxi\my-vim\data\plugged\vim-gitgutter\plugin\gitgutter.vim
+line 97: sourcing "C:\Users\jinxi\my-vim\data\plugged\vim-gitgutter\autoload\gitgutter\highlight.vim"
+finished sourcing C:\Users\jinxi\my-vim\data\plugged\vim-gitgutter\autoload\gitgutter\highlight.vim
+continuing in C:\Users\jinxi\my-vim\data\plugged\vim-gitgutter\plugin\gitgutter.vim
+line 104: sourcing "C:\Users\jinxi\my-vim\data\plugged\vim-gitgutter\autoload\gitgutter\async.vim"
+finished sourcing C:\Users\jinxi\my-vim\data\plugged\vim-gitgutter\autoload\gitgutter\async.vim
+continuing in C:\Users\jinxi\my-vim\data\plugged\vim-gitgutter\plugin\gitgutter.vim
+finished sourcing C:\Users\jinxi\my-vim\data\plugged\vim-gitgutter\plugin\gitgutter.vim
+sourcing "C:\Users\jinxi\my-vim\data\plugged\vim-fugitive\plugin\fugitive.vim"
+finished sourcing C:\Users\jinxi\my-vim\data\plugged\vim-fugitive\plugin\fugitive.vim
+sourcing "C:\Users\jinxi\my-vim\data\plugged\vim-commentary\plugin\commentary.vim"
+finished sourcing C:\Users\jinxi\my-vim\data\plugged\vim-commentary\plugin\commentary.vim
+sourcing "C:\Users\jinxi\my-vim\data\plugged\vim-surround\plugin\surround.vim"
+finished sourcing C:\Users\jinxi\my-vim\data\plugged\vim-surround\plugin\surround.vim
+sourcing "C:\Users\jinxi\my-vim\data\plugged\auto-pairs\plugin\auto-pairs.vim"
+finished sourcing C:\Users\jinxi\my-vim\data\plugged\auto-pairs\plugin\auto-pairs.vim
+sourcing "C:\Users\jinxi\my-vim\data\plugged\vim-unimpaired\plugin\unimpaired.vim"
+finished sourcing C:\Users\jinxi\my-vim\data\plugged\vim-unimpaired\plugin\unimpaired.vim
+sourcing "C:\Users\jinxi\my-vim\data\plugged\targets.vim\plugin\targets.vim"
+finished sourcing C:\Users\jinxi\my-vim\data\plugged\targets.vim\plugin\targets.vim
+sourcing "C:\Users\jinxi\my-vim\data\plugged\vim-easy-align\plugin\easy_align.vim"
+finished sourcing C:\Users\jinxi\my-vim\data\plugged\vim-easy-align\plugin\easy_align.vim
+sourcing "C:\Users\jinxi\my-vim\data\fzf\plugin\fzf.vim"
+finished sourcing C:\Users\jinxi\my-vim\data\fzf\plugin\fzf.vim
+sourcing "C:\Users\jinxi\my-vim\data\plugged\fzf.vim\plugin\fzf.vim"
+finished sourcing C:\Users\jinxi\my-vim\data\plugged\fzf.vim\plugin\fzf.vim
+sourcing "C:\Users\jinxi\my-vim\data\plugged\nerdtree\plugin\NERD_tree.vim"
+line 59: sourcing "C:\Users\jinxi\my-vim\data\plugged\nerdtree\autoload\nerdtree.vim"
+finished sourcing C:\Users\jinxi\my-vim\data\plugged\nerdtree\autoload\nerdtree.vim
+continuing in C:\Users\jinxi\my-vim\data\plugged\nerdtree\plugin\NERD_tree.vim
+line 1: sourcing "C:\Users\jinxi\my-vim\data\plugged\nerdtree\lib\nerdtree\path.vim"
+finished sourcing C:\Users\jinxi\my-vim\data\plugged\nerdtree\lib\nerdtree\path.vim
+continuing in nerdtree#loadClassFiles
+line 2: sourcing "C:\Users\jinxi\my-vim\data\plugged\nerdtree\lib\nerdtree\menu_controller.vim"
+finished sourcing C:\Users\jinxi\my-vim\data\plugged\nerdtree\lib\nerdtree\menu_controller.vim
+continuing in nerdtree#loadClassFiles
+line 3: sourcing "C:\Users\jinxi\my-vim\data\plugged\nerdtree\lib\nerdtree\menu_item.vim"
+finished sourcing C:\Users\jinxi\my-vim\data\plugged\nerdtree\lib\nerdtree\menu_item.vim
+continuing in nerdtree#loadClassFiles
+line 4: sourcing "C:\Users\jinxi\my-vim\data\plugged\nerdtree\lib\nerdtree\key_map.vim"
+finished sourcing C:\Users\jinxi\my-vim\data\plugged\nerdtree\lib\nerdtree\key_map.vim
+continuing in nerdtree#loadClassFiles
+line 5: sourcing "C:\Users\jinxi\my-vim\data\plugged\nerdtree\lib\nerdtree\bookmark.vim"
+finished sourcing C:\Users\jinxi\my-vim\data\plugged\nerdtree\lib\nerdtree\bookmark.vim
+continuing in nerdtree#loadClassFiles
+line 6: sourcing "C:\Users\jinxi\my-vim\data\plugged\nerdtree\lib\nerdtree\tree_file_node.vim"
+finished sourcing C:\Users\jinxi\my-vim\data\plugged\nerdtree\lib\nerdtree\tree_file_node.vim
+continuing in nerdtree#loadClassFiles
+line 7: sourcing "C:\Users\jinxi\my-vim\data\plugged\nerdtree\lib\nerdtree\tree_dir_node.vim"
+finished sourcing C:\Users\jinxi\my-vim\data\plugged\nerdtree\lib\nerdtree\tree_dir_node.vim
+continuing in nerdtree#loadClassFiles
+line 8: sourcing "C:\Users\jinxi\my-vim\data\plugged\nerdtree\lib\nerdtree\opener.vim"
+finished sourcing C:\Users\jinxi\my-vim\data\plugged\nerdtree\lib\nerdtree\opener.vim
+continuing in nerdtree#loadClassFiles
+line 9: sourcing "C:\Users\jinxi\my-vim\data\plugged\nerdtree\lib\nerdtree\creator.vim"
+finished sourcing C:\Users\jinxi\my-vim\data\plugged\nerdtree\lib\nerdtree\creator.vim
+continuing in nerdtree#loadClassFiles
+line 10: sourcing "C:\Users\jinxi\my-vim\data\plugged\nerdtree\lib\nerdtree\flag_set.vim"
+finished sourcing C:\Users\jinxi\my-vim\data\plugged\nerdtree\lib\nerdtree\flag_set.vim
+continuing in nerdtree#loadClassFiles
+line 11: sourcing "C:\Users\jinxi\my-vim\data\plugged\nerdtree\lib\nerdtree\nerdtree.vim"
+finished sourcing C:\Users\jinxi\my-vim\data\plugged\nerdtree\lib\nerdtree\nerdtree.vim
+continuing in nerdtree#loadClassFiles
+line 12: sourcing "C:\Users\jinxi\my-vim\data\plugged\nerdtree\lib\nerdtree\ui.vim"
+finished sourcing C:\Users\jinxi\my-vim\data\plugged\nerdtree\lib\nerdtree\ui.vim
+continuing in nerdtree#loadClassFiles
+line 13: sourcing "C:\Users\jinxi\my-vim\data\plugged\nerdtree\lib\nerdtree\event.vim"
+finished sourcing C:\Users\jinxi\my-vim\data\plugged\nerdtree\lib\nerdtree\event.vim
+continuing in nerdtree#loadClassFiles
+line 14: sourcing "C:\Users\jinxi\my-vim\data\plugged\nerdtree\lib\nerdtree\notifier.vim"
+finished sourcing C:\Users\jinxi\my-vim\data\plugged\nerdtree\lib\nerdtree\notifier.vim
+continuing in nerdtree#loadClassFiles
+line 148: sourcing "C:\Users\jinxi\my-vim\data\plugged\nerdtree\autoload\nerdtree\ui_glue.vim"
+finished sourcing C:\Users\jinxi\my-vim\data\plugged\nerdtree\autoload\nerdtree\ui_glue.vim
+continuing in C:\Users\jinxi\my-vim\data\plugged\nerdtree\plugin\NERD_tree.vim
+line 5: sourcing "C:\Users\jinxi\my-vim\data\plugged\vim-devicons\nerdtree_plugin\webdevicons.vim"
+finished sourcing C:\Users\jinxi\my-vim\data\plugged\vim-devicons\nerdtree_plugin\webdevicons.vim
+continuing in nerdtree#postSourceActions
+line 5: sourcing "C:\Users\jinxi\my-vim\data\plugged\nerdtree\nerdtree_plugin\exec_menuitem.vim"
+finished sourcing C:\Users\jinxi\my-vim\data\plugged\nerdtree\nerdtree_plugin\exec_menuitem.vim
+continuing in nerdtree#postSourceActions
+line 5: sourcing "C:\Users\jinxi\my-vim\data\plugged\nerdtree\nerdtree_plugin\fs_menu.vim"
+finished sourcing C:\Users\jinxi\my-vim\data\plugged\nerdtree\nerdtree_plugin\fs_menu.vim
+continuing in nerdtree#postSourceActions
+line 5: sourcing "C:\Users\jinxi\my-vim\data\plugged\nerdtree\nerdtree_plugin\vcs.vim"
+finished sourcing C:\Users\jinxi\my-vim\data\plugged\nerdtree\nerdtree_plugin\vcs.vim
+continuing in nerdtree#postSourceActions
+line 5: sourcing "C:\Users\jinxi\my-vim\data\plugged\nerdtree-git-plugin\nerdtree_plugin\git_status.vim"
+line 18: sourcing "C:\Users\jinxi\my-vim\data\plugged\nerdtree-git-plugin\autoload\gitstatus.vim"
+finished sourcing C:\Users\jinxi\my-vim\data\plugged\nerdtree-git-plugin\autoload\gitstatus.vim
+continuing in C:\Users\jinxi\my-vim\data\plugged\nerdtree-git-plugin\nerdtree_plugin\git_status.vim
+line 62: sourcing "C:\Users\jinxi\my-vim\data\plugged\nerdtree-git-plugin\autoload\gitstatus\log.vim"
+finished sourcing C:\Users\jinxi\my-vim\data\plugged\nerdtree-git-plugin\autoload\gitstatus\log.vim
+continuing in C:\Users\jinxi\my-vim\data\plugged\nerdtree-git-plugin\nerdtree_plugin\git_status.vim
+line 347: sourcing "C:\Users\jinxi\my-vim\data\plugged\nerdtree-git-plugin\autoload\gitstatus\listener.vim"
+finished sourcing C:\Users\jinxi\my-vim\data\plugged\nerdtree-git-plugin\autoload\gitstatus\listener.vim
+continuing in C:\Users\jinxi\my-vim\data\plugged\nerdtree-git-plugin\nerdtree_plugin\git_status.vim
+finished sourcing C:\Users\jinxi\my-vim\data\plugged\nerdtree-git-plugin\nerdtree_plugin\git_status.vim
+continuing in nerdtree#postSourceActions
+finished sourcing C:\Users\jinxi\my-vim\data\plugged\nerdtree\plugin\NERD_tree.vim
+sourcing "C:\Users\jinxi\my-vim\data\plugged\tagbar\plugin\tagbar.vim"
+finished sourcing C:\Users\jinxi\my-vim\data\plugged\tagbar\plugin\tagbar.vim
+sourcing "C:\Users\jinxi\my-vim\data\plugged\coc.nvim\plugin\coc.vim"
+line 38: sourcing "C:\Users\jinxi\my-vim\data\plugged\coc.nvim\autoload\coc\rpc.vim"
+finished sourcing C:\Users\jinxi\my-vim\data\plugged\coc.nvim\autoload\coc\rpc.vim
+continuing in C:\Users\jinxi\my-vim\data\plugged\coc.nvim\plugin\coc.vim
+line 54: sourcing "C:\Users\jinxi\my-vim\data\plugged\coc.nvim\autoload\coc\util.vim"
+finished sourcing C:\Users\jinxi\my-vim\data\plugged\coc.nvim\autoload\coc\util.vim
+continuing in coc#rpc#start_server
+line 58: sourcing "C:\Users\jinxi\my-vim\data\plugged\coc.nvim\autoload\coc\client.vim"
+finished sourcing C:\Users\jinxi\my-vim\data\plugged\coc.nvim\autoload\coc\client.vim
+continuing in coc#rpc#start_server
+line 10: sourcing "C:\Users\jinxi\my-vim\data\plugged\coc.nvim\autoload\coc\api.vim"
+finished sourcing C:\Users\jinxi\my-vim\data\plugged\coc.nvim\autoload\coc\api.vim
+continuing in <SNR>68_Enable
+finished sourcing C:\Users\jinxi\my-vim\data\plugged\coc.nvim\plugin\coc.vim
+sourcing "C:\Users\jinxi\my-vim\data\plugged\vimspector\plugin\vimspector.vim"
+finished sourcing C:\Users\jinxi\my-vim\data\plugged\vimspector\plugin\vimspector.vim
+sourcing "C:\Users\jinxi\my-vim\data\plugged\undotree\plugin\undotree.vim"
+finished sourcing C:\Users\jinxi\my-vim\data\plugged\undotree\plugin\undotree.vim
+sourcing "C:\Users\jinxi\my-vim\data\plugged\vim-visual-multi\plugin\visual-multi.vim"
+line 65: sourcing "C:\Users\jinxi\my-vim\data\plugged\vim-visual-multi\autoload\vm\plugs.vim"
+finished sourcing C:\Users\jinxi\my-vim\data\plugged\vim-visual-multi\autoload\vm\plugs.vim
+continuing in C:\Users\jinxi\my-vim\data\plugged\vim-visual-multi\plugin\visual-multi.vim
+line 66: sourcing "C:\Users\jinxi\my-vim\data\plugged\vim-visual-multi\autoload\vm\maps.vim"
+finished sourcing C:\Users\jinxi\my-vim\data\plugged\vim-visual-multi\autoload\vm\maps.vim
+continuing in C:\Users\jinxi\my-vim\data\plugged\vim-visual-multi\plugin\visual-multi.vim
+line 13: sourcing "C:\Users\jinxi\my-vim\data\plugged\vim-visual-multi\autoload\vm\maps\all.vim"
+finished sourcing C:\Users\jinxi\my-vim\data\plugged\vim-visual-multi\autoload\vm\maps\all.vim
+continuing in <SNR>77_build_permanent_maps
+finished sourcing C:\Users\jinxi\my-vim\data\plugged\vim-visual-multi\plugin\visual-multi.vim
+sourcing "C:\Users\jinxi\my-vim\data\plugged\vim-easymotion\plugin\EasyMotion.vim"
+finished sourcing C:\Users\jinxi\my-vim\data\plugged\vim-easymotion\plugin\EasyMotion.vim
+sourcing "C:\Users\jinxi\my-vim\data\plugged\vim-which-key\plugin\which_key.vim"
+finished sourcing C:\Users\jinxi\my-vim\data\plugged\vim-which-key\plugin\which_key.vim
+sourcing "C:\Users\jinxi\my-vim\data\plugged\vimcdoc\plugin\vimcdoc.vim"
+finished sourcing C:\Users\jinxi\my-vim\data\plugged\vimcdoc\plugin\vimcdoc.vim
+sourcing "C:\Users\jinxi\my-vim\data\plugged\vim-translator\plugin\translator.vim"
+finished sourcing C:\Users\jinxi\my-vim\data\plugged\vim-translator\plugin\translator.vim
+sourcing "C:\Users\jinxi\my-vim\data\plugged\vim-polyglot\plugin\polyglot.vim"
+--- Autocommands ---
+polyglot-observer  CursorHold
+    <buffer=3>
+              if (&ft == "" || &ft == "conf") | call s:PolyglotObserve(s:detect_func) | endif
+	Last set from ~\my-vim\data\plugged\vim-polyglot\autoload\polyglot\init.vim line 2688
+webdevicons_cursor_hold  CursorHold
+    *         silent! call s:CursorHoldUpdate()
+	Last set from ~\my-vim\data\plugged\vim-devicons\plugin\webdevicons.vim line 402
+gitgutter  CursorHold
+    *         call gitgutter#process_buffer(bufnr(''), 0)
+	Last set from ~\my-vim\data\plugged\vim-gitgutter\plugin\gitgutter.vim line 300
+coc_nvim  CursorHold
+    *         call coc#float#check_related()
+	Last set from ~\my-vim\data\plugged\coc.nvim\plugin\coc.vim line 409
+              call s:Autocmd('CursorHold', +expand('<abuf>'), [line('.'), col('.')], win_getid())
+	Last set from ~\my-vim\data\plugged\coc.nvim\plugin\coc.vim line 437
+line 99: sourcing "C:\Program Files\Vim\vim91\macros\matchit.vim"
+not found in 'packpath': "pack/*/start/matchit"
+line 4: sourcing "C:\Program Files\Vim\vim91\pack\dist\opt\matchit\plugin\matchit.vim"
+finished sourcing C:\Program Files\Vim\vim91\pack\dist\opt\matchit\plugin\matchit.vim
+continuing in C:\Program Files\Vim\vim91\macros\matchit.vim
+finished sourcing C:\Program Files\Vim\vim91\macros\matchit.vim
+continuing in C:\Users\jinxi\my-vim\data\plugged\vim-polyglot\plugin\polyglot.vim
+finished sourcing C:\Users\jinxi\my-vim\data\plugged\vim-polyglot\plugin\polyglot.vim
+sourcing "C:\Program Files\Vim\vim91\plugin\getscriptPlugin.vim"
+finished sourcing C:\Program Files\Vim\vim91\plugin\getscriptPlugin.vim
+sourcing "C:\Program Files\Vim\vim91\plugin\gzip.vim"
+finished sourcing C:\Program Files\Vim\vim91\plugin\gzip.vim
+sourcing "C:\Program Files\Vim\vim91\plugin\logiPat.vim"
+finished sourcing C:\Program Files\Vim\vim91\plugin\logiPat.vim
+sourcing "C:\Program Files\Vim\vim91\plugin\manpager.vim"
+finished sourcing C:\Program Files\Vim\vim91\plugin\manpager.vim
+sourcing "C:\Program Files\Vim\vim91\plugin\matchparen.vim"
+finished sourcing C:\Program Files\Vim\vim91\plugin\matchparen.vim
+sourcing "C:\Program Files\Vim\vim91\plugin\netrwPlugin.vim"
+finished sourcing C:\Program Files\Vim\vim91\plugin\netrwPlugin.vim
+sourcing "C:\Program Files\Vim\vim91\plugin\rrhelper.vim"
+finished sourcing C:\Program Files\Vim\vim91\plugin\rrhelper.vim
+sourcing "C:\Program Files\Vim\vim91\plugin\spellfile.vim"
+finished sourcing C:\Program Files\Vim\vim91\plugin\spellfile.vim
+sourcing "C:\Program Files\Vim\vim91\plugin\tarPlugin.vim"
+finished sourcing C:\Program Files\Vim\vim91\plugin\tarPlugin.vim
+sourcing "C:\Program Files\Vim\vim91\plugin\tohtml.vim"
+finished sourcing C:\Program Files\Vim\vim91\plugin\tohtml.vim
+sourcing "C:\Program Files\Vim\vim91\plugin\vimballPlugin.vim"
+finished sourcing C:\Program Files\Vim\vim91\plugin\vimballPlugin.vim
+sourcing "C:\Program Files\Vim\vim91\plugin\zipPlugin.vim"
+finished sourcing C:\Program Files\Vim\vim91\plugin\zipPlugin.vim
+not found in 'packpath': "pack/*/start/*"
+not found in 'runtimepath': "plugin/**/*.vim"
+Reading viminfo file "C:\Users\jinxi\my-vim/data/viminfo" info oldfiles
+Reading viminfo file "C:\Users\jinxi\my-vim/data/viminfo" marks
+Executing BufNewFile Autocommands for "*.LOG"
+autocommand setf log
+
+Executing FileType Autocommands for "*"
+autocommand call LoadFTPlugin()
+
+not found in 'runtimepath': "ftplugin/log.vim ftplugin/log_*.vim ftplugin/log/*.vim"
+Executing FileType Autocommands for "*"
+autocommand call s:LoadIndent()
+
+not found in 'runtimepath': "indent/log.vim"
+Executing FileType Autocommands for "*"
+autocommand 0verbose exe "set syntax=" . expand("<amatch>")
+
+Executing FileType Autocommands for "*"
+autocommand call s:Autocmd('FileType', expand('<amatch>'), +expand('<abuf>'))
+
+Executing BufNewFile Autocommands for "*.log"
+autocommand setf log
+
+Executing BufNewFile Autocommands for "*"
+autocommand if (&ft == "" || &ft == "conf") && expand("<afile>:e") == "" | call polyglot#shebang#Detect() | endif
+
+Executing BufNewFile Autocommands for "*"
+autocommand if !did_filetype() && expand("<amatch>") !~ g:ft_ignore_pat | runtime! scripts.vim | endif
+
+Executing BufNewFile Autocommands for "*"
+autocommand if exists('b:git_dir') && b:git_dir =~# '^$\|' . s:bad_git_dir |   unlet b:git_dir | endif
+
+Executing BufNewFile Autocommands for "*"
+autocommand call s:Autocmd('BufCreate', +expand('<abuf>'))
+
+Executing BufWinEnter Autocommands for "*"
+autocommand if &ft == "" && expand("<afile>:e") == "" | call s:Observe() | endif
+
+Executing BufWinEnter Autocommands for "*"
+autocommand let g:fzf#vim#buffers[bufnr('')] = reltimefloat(reltime())
+
+Executing BufWinEnter Autocommands for "*"
+autocommand call s:Autocmd('BufWinEnter', +expand('<abuf>'), win_getid(), coc#window#visible_range(win_getid()))
+
+line 0: sourcing "C:\Users\jinxi\my-vim\data\plugged\coc.nvim\autoload\coc\window.vim"
+finished sourcing C:\Users\jinxi\my-vim\data\plugged\coc.nvim\autoload\coc\window.vim
+continuing in BufWinEnter Autocommands for "*"
+Executing BufWinEnter Autocommands for "*"
+autocommand autocmd SafeState * ++once call s:Highlight_Matching_Pair()
+
+Executing BufEnter Autocommands for "*"
+autocommand call s:detect_indent()
+
+Executing BufEnter Autocommands for "*"
+autocommand call lightline#update()
+
+line 0: sourcing "C:\Users\jinxi\my-vim\data\plugged\lightline.vim\autoload\lightline.vim"
+finished sourcing C:\Users\jinxi\my-vim\data\plugged\lightline.vim\autoload\lightline.vim
+continuing in BufEnter Autocommands for "*"
+line 37: sourcing "C:\Users\jinxi\my-vim\data\plugged\lightline.vim\autoload\lightline\tab.vim"
+finished sourcing C:\Users\jinxi\my-vim\data\plugged\lightline.vim\autoload\lightline\tab.vim
+continuing in lightline#init
+line 2: sourcing "C:\Users\jinxi\my-vim\data\plugged\gruvbox\autoload\lightline\colorscheme\gruvbox.vim"
+line 56: sourcing "C:\Users\jinxi\my-vim\data\plugged\lightline.vim\autoload\lightline\colorscheme.vim"
+finished sourcing C:\Users\jinxi\my-vim\data\plugged\lightline.vim\autoload\lightline\colorscheme.vim
+continuing in C:\Users\jinxi\my-vim\data\plugged\gruvbox\autoload\lightline\colorscheme\gruvbox.vim
+finished sourcing C:\Users\jinxi\my-vim\data\plugged\gruvbox\autoload\lightline\colorscheme\gruvbox.vim
+continuing in lightline#colorscheme
+line 9: sourcing "C:\Users\jinxi\my-vim\data\plugged\lightline.vim\autoload\lightline\colortable.vim"
+finished sourcing C:\Users\jinxi\my-vim\data\plugged\lightline.vim\autoload\lightline\colortable.vim
+continuing in lightline#colorscheme
+Executing BufEnter Autocommands for "*"
+autocommand call s:on_bufenter()
+
+line 1: sourcing "C:\Users\jinxi\my-vim\data\plugged\vim-gitgutter\autoload\gitgutter.vim"
+finished sourcing C:\Users\jinxi\my-vim\data\plugged\vim-gitgutter\autoload\gitgutter.vim
+continuing in <SNR>29_on_bufenter
+Executing BufEnter Autocommands for "*"
+autocommand :call AutoPairsTryInit()
+
+Executing BufEnter Autocommands for "*"
+autocommand call s:HandleBufEnter(+expand('<abuf>'))
+
+Executing BufWinLeave Autocommands for "*"
+autocommand call s:Autocmd('BufWinLeave', +expand('<abuf>'), bufwinid(+expand('<abuf>')))
+
+Executing BufWinLeave Autocommands for "*"
+autocommand call s:Autocmd('BufWinLeave', +expand('<abuf>'), bufwinid(+expand('<abuf>')))
+
+Executing BufUnload Autocommands for "*"
+autocommand call s:Autocmd('BufUnload', +expand('<abuf>'))
+
+Executing BufUnload Autocommands for "*"
+autocommand call s:Autocmd('BufUnload', +expand('<abuf>'))
+
+Executing VimLeavePre Autocommands for "*"
+autocommand call s:on_vimleavepre()
+
+Executing VimLeavePre Autocommands for "*"
+autocommand call s:VimLeavePre()
+
+Executing VimLeavePre Autocommands for "*"
+autocommand call s:vm_persist()
+
+Writing viminfo file "C:\Users\jinxi\my-vim/data/viminfo"

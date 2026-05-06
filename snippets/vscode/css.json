@@ -1,0 +1,42 @@
+{
+  "Rule": {
+    "prefix": "rule",
+    "body": ["${1:selector} {", "  ${0}", "}"],
+    "description": "CSS rule"
+  },
+  "Flex Center": {
+    "prefix": "flexc",
+    "body": ["display: flex;", "align-items: center;", "justify-content: center;"],
+    "description": "Flex center"
+  },
+  "Grid": {
+    "prefix": "grid",
+    "body": ["display: grid;", "grid-template-columns: repeat(${1:3}, minmax(0, 1fr));", "gap: ${2:1rem};"],
+    "description": "Grid layout"
+  },
+  "Media Query": {
+    "prefix": "media",
+    "body": ["@media (${1:max-width}: ${2:768px}) {", "  ${0}", "}"],
+    "description": "Media query"
+  },
+  "Transition": {
+    "prefix": "transition",
+    "body": ["transition: ${1:all} ${2:150ms} ${3:ease};"],
+    "description": "transition"
+  },
+  "Position Absolute Fill": {
+    "prefix": "absfill",
+    "body": ["position: absolute;", "inset: 0;"],
+    "description": "Absolute fill"
+  },
+  "Text Ellipsis": {
+    "prefix": "ellipsis",
+    "body": ["overflow: hidden;", "text-overflow: ellipsis;", "white-space: nowrap;"],
+    "description": "Single-line ellipsis"
+  },
+  "Custom Property": {
+    "prefix": "var",
+    "body": ["var(--${1:name}, ${2:fallback})"],
+    "description": "CSS variable"
+  }
+}

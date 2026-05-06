@@ -1,0 +1,42 @@
+{
+  "CMake Project": {
+    "prefix": "cmake",
+    "body": ["cmake_minimum_required(VERSION ${1:3.15})", "project(${2:ProjectName} VERSION ${3:1.0.0} LANGUAGES ${4:CXX})", "", "set(CMAKE_CXX_STANDARD ${5:17})", "set(CMAKE_CXX_STANDARD_REQUIRED ON)", "set(CMAKE_CXX_EXTENSIONS OFF)", "", "${0}"],
+    "description": "Basic CMake project"
+  },
+  "Executable": {
+    "prefix": "exe",
+    "body": ["add_executable(${1:target}", "  ${0:src/main.cpp}", ")"],
+    "description": "add_executable"
+  },
+  "Library": {
+    "prefix": "lib",
+    "body": ["add_library(${1:target} ${2:STATIC}", "  ${0:source.cpp}", ")"],
+    "description": "add_library"
+  },
+  "Target Link": {
+    "prefix": "target_link",
+    "body": ["target_link_libraries(${1:target}", "  ${2:PRIVATE}", "  ${0:libraries}", ")"],
+    "description": "target_link_libraries"
+  },
+  "Target Include": {
+    "prefix": "target_include",
+    "body": ["target_include_directories(${1:target}", "  ${2:PUBLIC}", "  ${0:include}", ")"],
+    "description": "target_include_directories"
+  },
+  "Find Package": {
+    "prefix": "find",
+    "body": ["find_package(${1:PackageName} ${2:REQUIRED})"],
+    "description": "find_package"
+  },
+  "Option": {
+    "prefix": "option",
+    "body": ["option(${1:OPTION_NAME} \"${2:Description}\" ${3:OFF})"],
+    "description": "option"
+  },
+  "Install Target": {
+    "prefix": "install",
+    "body": ["install(TARGETS ${1:target}", "  RUNTIME DESTINATION ${2:bin}", "  LIBRARY DESTINATION ${3:lib}", "  ARCHIVE DESTINATION ${4:lib}", ")"],
+    "description": "install target"
+  }
+}

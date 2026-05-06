@@ -1,0 +1,170 @@
+
+n  <Space>-    * :split<CR>
+	最近修改于 ~\my-vim\config\keymaps.vim 行 55
+n  <Space>wo   * <C-W>o
+	最近修改于 ~\my-vim\config\keymaps.vim 行 54
+n  <Space>wv   * :vsplit<CR>
+	最近修改于 ~\my-vim\config\keymaps.vim 行 53
+n  <Space>ws   * :split<CR>
+	最近修改于 ~\my-vim\config\keymaps.vim 行 52
+n  <Space>wd   * <C-W>c
+	最近修改于 ~\my-vim\config\keymaps.vim 行 51
+n  <Space>ww   * <C-W>w
+	最近修改于 ~\my-vim\config\keymaps.vim 行 50
+n  <Space>fe   * :NERDTreeToggle<CR>
+	最近修改于 ~\my-vim\config\keymaps.vim 行 39
+n  <Space>nf   * :NERDTreeFind<CR>
+	最近修改于 ~\my-vim\config\keymaps.vim 行 38
+n  <Space>e    * :NERDTreeToggle<CR>
+	最近修改于 ~\my-vim\config\keymaps.vim 行 37
+n  <Space>:    * :MyVimCommandHistory<CR>
+	最近修改于 ~\my-vim\config\keymaps.vim 行 33
+n  <Space>,    * :MyVimBuffers<CR>
+	最近修改于 ~\my-vim\config\keymaps.vim 行 32
+n  <Space>/    * :MyVimGrep<CR>
+	最近修改于 ~\my-vim\config\keymaps.vim 行 31
+n  <Space><Space> * :MyVimBuffers<CR>
+	最近修改于 ~\my-vim\config\keymaps.vim 行 30
+n  <Space>fn   * :enew<CR>
+	最近修改于 ~\my-vim\config\keymaps.vim 行 27
+n  <Space>fw   * :MyVimWindows<CR>
+	最近修改于 ~\my-vim\config\keymaps.vim 行 26
+n  <Space>fm   * :MyVimMarks<CR>
+	最近修改于 ~\my-vim\config\keymaps.vim 行 25
+n  <Space>fc   * :MyVimCommandHistory<CR>
+	最近修改于 ~\my-vim\config\keymaps.vim 行 24
+n  <Space>fr   * :MyVimHistory<CR>
+	最近修改于 ~\my-vim\config\keymaps.vim 行 23
+n  <Space>fh   * :MyVimHelptags<CR>
+	最近修改于 ~\my-vim\config\keymaps.vim 行 22
+n  <Space>fb   * :MyVimBuffers<CR>
+	最近修改于 ~\my-vim\config\keymaps.vim 行 21
+n  <Space>fg   * :MyVimGrep<CR>
+	最近修改于 ~\my-vim\config\keymaps.vim 行 20
+n  <Space>ff   * :MyVimFiles<CR>
+	最近修改于 ~\my-vim\config\keymaps.vim 行 19
+n  <Space>nh   * :nohlsearch<CR>
+	最近修改于 ~\my-vim\config\keymaps.vim 行 16
+n  <Space>qq   * :qa<CR>
+	最近修改于 ~\my-vim\config\keymaps.vim 行 12
+n  <Space>x    * :x<CR>
+	最近修改于 ~\my-vim\config\keymaps.vim 行 11
+n  <Space>Q    * :qa!<CR>
+	最近修改于 ~\my-vim\config\keymaps.vim 行 10
+n  <Space>q    * :q<CR>
+	最近修改于 ~\my-vim\config\keymaps.vim 行 9
+n  <Space>w    * :w<CR>
+	最近修改于 ~\my-vim\config\keymaps.vim 行 8
+n  <Space>h    * :echo "查看完整帮助: 打开 docs/速查卡.md 或 docs/快捷键指南.md"<CR>
+	最近修改于 ~\my-vim\config\keymaps.vim 行 5
+n  <Space>?    * :echo "Leader键帮助:  w=保存  q=退出  e=文件树  ff=查找  fg=搜索"<CR>
+	最近修改于 ~\my-vim\config\keymaps.vim 行 4
+n  <Space>     * :<C-U>WhichKey ' '<CR>
+	最近修改于 ~\my-vim\config\plugin-config.vim 行 1445
+n  <Space>Dl   * :DBUILastQueryInfo<CR>
+	最近修改于 ~\my-vim\config\plugin-config.vim 行 949
+n  <Space>Dr   * :DBUIRenameBuffer<CR>
+	最近修改于 ~\my-vim\config\plugin-config.vim 行 948
+n  <Space>Df   * :DBUIFindBuffer<CR>
+	最近修改于 ~\my-vim\config\plugin-config.vim 行 947
+n  <Space>Da   * :DBUIAddConnection<CR>
+	最近修改于 ~\my-vim\config\plugin-config.vim 行 946
+n  <Space>Du   * :DBUIToggle<CR>
+	最近修改于 ~\my-vim\config\plugin-config.vim 行 945
+n  <Space>se   * :split<CR>:e ~/my-vim/snippets/<C-R>=&filetype<CR>.snippets<CR>
+	最近修改于 ~\my-vim\config\plugin-config.vim 行 899
+n  <Space>tE   * :call SimpleTranslate('zh_en')<CR>
+	最近修改于 ~\my-vim\config\plugin-config.vim 行 846
+n  <Space>tZ   * :call SimpleTranslate('en_zh')<CR>
+	最近修改于 ~\my-vim\config\plugin-config.vim 行 844
+n  <Space>ts   * :call SimpleTranslate()<CR>
+	最近修改于 ~\my-vim\config\plugin-config.vim 行 843
+n  <Space>tt   * :call SimpleTranslate()<CR>
+	最近修改于 ~\my-vim\config\plugin-config.vim 行 841
+n  <Space>tw   * :call SimpleTranslate()<CR>
+	最近修改于 ~\my-vim\config\plugin-config.vim 行 839
+n  <Space>tR     <Plug>TranslateR
+	最近修改于 ~\my-vim\config\plugin-config.vim 行 733
+n  <Space>tT     <Plug>TranslateW
+	最近修改于 ~\my-vim\config\plugin-config.vim 行 731
+n  <Space>tW     <Plug>Translate
+	最近修改于 ~\my-vim\config\plugin-config.vim 行 729
+n  <Space>dR   * :call vimspector#Reset()<CR>
+	最近修改于 ~\my-vim\config\plugin-config.vim 行 692
+n  <Space>du   * :call vimspector#ToggleUI()<CR>
+	最近修改于 ~\my-vim\config\plugin-config.vim 行 691
+n  <Space>dt   * :call vimspector#RunToCursor()<CR>
+	最近修改于 ~\my-vim\config\plugin-config.vim 行 690
+n  <Space>dO   * :call vimspector#StepOut()<CR>
+	最近修改于 ~\my-vim\config\plugin-config.vim 行 689
+n  <Space>do   * :call vimspector#StepOut()<CR>
+	最近修改于 ~\my-vim\config\plugin-config.vim 行 688
+n  <Space>di   * :call vimspector#StepInto()<CR>
+	最近修改于 ~\my-vim\config\plugin-config.vim 行 687
+n  <Space>dn   * :call vimspector#StepOver()<CR>
+	最近修改于 ~\my-vim\config\plugin-config.vim 行 686
+n  <Space>dD   * :call vimspector#ClearBreakpoints()<CR>
+	最近修改于 ~\my-vim\config\plugin-config.vim 行 685
+n  <Space>dB   * :call vimspector#AddFunctionBreakpoint()<CR>
+	最近修改于 ~\my-vim\config\plugin-config.vim 行 684
+n  <Space>db   * :call vimspector#ToggleBreakpoint()<CR>
+	最近修改于 ~\my-vim\config\plugin-config.vim 行 683
+n  <Space>dp   * :call vimspector#Pause()<CR>
+	最近修改于 ~\my-vim\config\plugin-config.vim 行 682
+n  <Space>dr   * :call vimspector#Restart()<CR>
+	最近修改于 ~\my-vim\config\plugin-config.vim 行 681
+n  <Space>ds   * :call vimspector#Stop()<CR>
+	最近修改于 ~\my-vim\config\plugin-config.vim 行 680
+n  <Space>dc   * :call vimspector#Continue()<CR>
+	最近修改于 ~\my-vim\config\plugin-config.vim 行 679
+n  <Space>dm   * :MyVimDebugBuildCurrent<CR>
+	最近修改于 ~\my-vim\config\plugin-config.vim 行 678
+n  <Space>dd   * :MyVimDebugCurrent<CR>
+	最近修改于 ~\my-vim\config\plugin-config.vim 行 677
+n  <Space>vf   * :Vista finder<CR>
+	最近修改于 ~\my-vim\config\plugin-config.vim 行 386
+n  <Space>v    * :Vista!!<CR>
+	最近修改于 ~\my-vim\config\plugin-config.vim 行 385
+n  <Space>tb   * :TagbarToggle<CR>
+	最近修改于 ~\my-vim\config\plugin-config.vim 行 339
+n  <Space>ig   * :IndentGuidesToggle<CR>
+	最近修改于 ~\my-vim\config\plugin-config.vim 行 35
+读取 viminfo 文件 "C:\Users\jinxi\my-vim/data/viminfo" 标记
+在 'packpath' 中找不到："pack/*/start/*"
+处理 C:\Users\jinxi\my-vim\data\plugged\vim-dadbod-ui\plugin\db_ui.vim 时发生错误:
+第   49 行:
+E716: 字典中不存在键："expanded"
+处理 C:\Users\jinxi\my-vim\data\plugged\vim-dadbod-ui\plugin\db_ui.vim 时发生错误:
+第   56 行:
+E716: 字典中不存在键："collapsed"
+处理 C:\Users\jinxi\my-vim\data\plugged\vim-dadbod-ui\plugin\db_ui.vim 时发生错误:
+第  119 行:
+E716: 字典中不存在键："expanded"
+处理 C:\Users\jinxi\my-vim\data\plugged\vim-dadbod-ui\plugin\db_ui.vim 时发生错误:
+第  120 行:
+E716: 字典中不存在键："collapsed"
+--- 自动命令 ---
+webdevicons_cursor_hold  CursorHold
+    *         silent! call s:CursorHoldUpdate()
+	最近修改于 ~\my-vim\data\plugged\vim-devicons\plugin\webdevicons.vim 行 402
+coc_nvim  CursorHold
+    *         call coc#float#check_related()
+	最近修改于 ~\my-vim\data\plugged\coc.nvim\plugin\coc.vim 行 328
+              call s:Autocmd('CursorHold', +expand('<abuf>'), [line('.'), col('.')])
+	最近修改于 ~\my-vim\data\plugged\coc.nvim\plugin\coc.vim 行 353
+sig_autocmds  CursorHold
+    *         if (g:SignaturePeriodicRefresh) | call signature#sign#Refresh() | endif
+	最近修改于 ~\my-vim\data\plugged\vim-signature\plugin\signature.vim 行 61
+在 'packpath' 中找不到："pack/*/start/matchit"
+在 'packpath' 中找不到："pack/*/start/*"
+处理 C:\Users\jinxi\my-vim\data\plugged\vim-snipmate\after\plugin\snipMate.vim[24]..function <SNR>109_map_if_not_mapped 时发生错误:
+第    3 行:
+E227: 映射 	 已存在
+处理 C:\Users\jinxi\my-vim\data\plugged\vim-snipmate\after\plugin\snipMate.vim[36]..function <SNR>109_map_if_not_mapped 时发生错误:
+第    3 行:
+E227: 映射 �kB 已存在
+读取 viminfo 文件 "C:\Users\jinxi\my-vim/data/viminfo" 信息 旧文件
+读取 viminfo 文件 "C:\Users\jinxi\my-vim/data/viminfo" 标记
+在 'runtimepath' 中找不到："ftplugin/log.vim ftplugin/log_*.vim ftplugin/log/*.vim"
+在 'runtimepath' 中找不到："indent/log.vim"
+写入 viminfo 文件 "C:\Users\jinxi\my-vim/data/viminfo"

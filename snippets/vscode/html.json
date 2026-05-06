@@ -1,0 +1,42 @@
+{
+  "HTML5": {
+    "prefix": "html5",
+    "body": ["<!DOCTYPE html>", "<html lang=\"zh-CN\">", "<head>", "  <meta charset=\"UTF-8\">", "  <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">", "  <title>${1:Title}</title>", "</head>", "<body>", "  ${0}", "</body>", "</html>"],
+    "description": "HTML5 document"
+  },
+  "Div": {
+    "prefix": "div",
+    "body": ["<div class=\"${1:class}\">", "  ${0}", "</div>"],
+    "description": "div element"
+  },
+  "Anchor": {
+    "prefix": "a",
+    "body": ["<a href=\"${1:#}\">${0:text}</a>"],
+    "description": "anchor"
+  },
+  "Image": {
+    "prefix": "img",
+    "body": ["<img src=\"${1:url}\" alt=\"${2:description}\">"],
+    "description": "image"
+  },
+  "Form": {
+    "prefix": "form",
+    "body": ["<form action=\"${1:#}\" method=\"${2:post}\">", "  ${0}", "  <button type=\"submit\">Submit</button>", "</form>"],
+    "description": "form"
+  },
+  "Input": {
+    "prefix": "input",
+    "body": ["<input type=\"${1:text}\" name=\"${2:name}\" placeholder=\"${3:placeholder}\">"],
+    "description": "input"
+  },
+  "Button": {
+    "prefix": "button",
+    "body": ["<button type=\"${1:button}\">${0:Click}</button>"],
+    "description": "button"
+  },
+  "Section": {
+    "prefix": "section",
+    "body": ["<section>", "  ${0}", "</section>"],
+    "description": "section"
+  }
+}

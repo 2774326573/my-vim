@@ -1,0 +1,57 @@
+{
+  "Function": {
+    "prefix": "fn",
+    "body": ["function ${1:name}(${2:params}) {", "  ${0:// code}", "}"],
+    "description": "Function declaration"
+  },
+  "Arrow Function": {
+    "prefix": "afn",
+    "body": ["const ${1:name} = (${2:params}) => {", "  ${0:// code}", "};"],
+    "description": "Arrow function"
+  },
+  "Async Function": {
+    "prefix": "async",
+    "body": ["async function ${1:name}(${2:params}) {", "  ${0:// code}", "}"],
+    "description": "Async function"
+  },
+  "Console Log": {
+    "prefix": "log",
+    "body": ["console.log(${1:value});"],
+    "description": "console.log"
+  },
+  "For Of": {
+    "prefix": "forof",
+    "body": ["for (const ${1:item} of ${2:items}) {", "  ${0:// code}", "}"],
+    "description": "for...of loop"
+  },
+  "Try Catch": {
+    "prefix": "try",
+    "body": ["try {", "  ${1:// code}", "} catch (${2:error}) {", "  ${0:// handle}", "}"],
+    "description": "try/catch"
+  },
+  "Fetch": {
+    "prefix": "fetch",
+    "body": ["const ${1:response} = await fetch(\"${2:url}\");", "const ${3:data} = await ${1:response}.json();", "${0}"],
+    "description": "fetch JSON"
+  },
+  "Import": {
+    "prefix": "import",
+    "body": ["import ${1:name} from \"${2:module}\";"],
+    "description": "ES module import"
+  },
+  "Export Default": {
+    "prefix": "exportd",
+    "body": ["export default ${1:name};"],
+    "description": "Default export"
+  },
+  "Promise": {
+    "prefix": "promise",
+    "body": ["new Promise((resolve, reject) => {", "  ${0:// code}", "});"],
+    "description": "Promise constructor"
+  },
+  "Set Timeout": {
+    "prefix": "settimeout",
+    "body": ["setTimeout(() => {", "  ${0:// code}", "}, ${1:1000});"],
+    "description": "setTimeout"
+  }
+}

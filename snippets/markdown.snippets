@@ -1,0 +1,78 @@
+# Markdown 标题
+snippet h1
+	# ${1:标题}
+
+snippet h2
+	## ${1:标题}
+
+snippet h3
+	### ${1:标题}
+
+snippet h4
+	#### ${1:标题}
+
+# 代码块
+snippet code
+	\`\`\`${1:language}
+	${2:code}
+	\`\`\`
+
+snippet c
+	\`${1:code}\`
+
+# 链接和图片
+snippet link
+	[${1:text}](${2:url})
+
+snippet img
+	![${1:alt}](${2:url})
+
+# 列表
+snippet ul
+	- ${1:item}
+
+snippet ol
+	1. ${1:item}
+
+snippet task
+	- [ ] ${1:task}
+
+snippet taskdone
+	- [x] ${1:completed task}
+
+# 表格
+snippet table
+	| ${1:Header 1} | ${2:Header 2} |
+	| ------------- | ------------- |
+	| ${3:Cell 1}   | ${4:Cell 2}   |
+
+# 引用
+snippet quote
+	> ${1:quote}
+
+# 分割线
+snippet hr
+	---
+
+# 粗体斜体
+snippet bold
+	**${1:text}**
+
+snippet italic
+	*${1:text}*
+
+snippet strike
+	~~${1:text}~~
+
+# 脚注
+snippet footnote
+	[^${1:1}]: ${2:footnote text}
+
+# 数学公式
+snippet math
+	$${1:formula}$
+
+snippet mathblock
+	$$
+	${1:formula}
+	$$

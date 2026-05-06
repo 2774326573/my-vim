@@ -1,0 +1,181 @@
+# CMake Code Snippets
+
+snippet cmake
+cmake_minimum_required(VERSION ${1:3.10})
+project(${2:ProjectName} VERSION ${3:1.0.0})
+${0}
+
+snippet proj
+project(${1:ProjectName}
+	VERSION ${2:1.0.0}
+	LANGUAGES ${3:CXX}
+)
+
+snippet cxx
+set(CMAKE_CXX_STANDARD ${1:17})
+set(CMAKE_CXX_STANDARD_REQUIRED ${2:ON})
+set(CMAKE_CXX_EXTENSIONS ${3:OFF})
+
+snippet exe
+add_executable(${1:target_name}
+	${0:source_files}
+)
+
+snippet lib
+add_library(${1:lib_name} ${2:STATIC}
+	${0:source_files}
+)
+
+snippet target_link
+target_link_libraries(${1:target}
+	${2:PRIVATE}
+	${0:libraries}
+)
+
+snippet target_include
+target_include_directories(${1:target}
+	${2:PUBLIC}
+	${0:directories}
+)
+
+snippet find
+find_package(${1:PackageName} ${2:REQUIRED})
+
+snippet option
+option(${1:OPTION_NAME} "${2:Description}" ${3:OFF})
+
+snippet set
+set(${1:VARIABLE_NAME} ${0:value})
+
+snippet if
+if(${1:condition})
+	${0:# code}
+endif()
+
+snippet foreach
+foreach(${1:var} ${2:list})
+	${0:# code}
+endforeach()
+
+snippet message
+message(${1:STATUS} "${0:message}")
+
+snippet file_glob
+file(GLOB ${1:SOURCES}
+	"${2:src}/*.${3:cpp}"
+)
+
+snippet subdirs
+add_subdirectory(${0:subdir})
+
+snippet compile_opts
+target_compile_options(${1:target}
+	${2:PRIVATE}
+	${0:options}
+)
+
+snippet compile_defs
+target_compile_definitions(${1:target}
+	${2:PRIVATE}
+	${0:definitions}
+)
+
+snippet install
+install(TARGETS ${1:target}
+	RUNTIME DESTINATION ${2:bin}
+	LIBRARY DESTINATION ${3:lib}
+	ARCHIVE DESTINATION ${4:lib}
+)
+
+snippet test
+enable_testing()
+add_test(NAME ${1:test_name}
+	COMMAND ${0:test_command}
+)
+
+snippet props
+set_target_properties(${1:target}
+	PROPERTIES
+		${0:property value}
+)
+
+snippet pkg_config
+find_package(PkgConfig REQUIRED)
+pkg_check_modules(${1:PREFIX} REQUIRED ${2:package})
+
+snippet opencv
+find_package(OpenCV REQUIRED)
+include_directories($\{OpenCV_INCLUDE_DIRS})
+target_link_libraries(${1:target} $\{OpenCV_LIBS})
+
+snippet qt
+find_package(Qt5 COMPONENTS ${1:Core Widgets} REQUIRED)
+target_link_libraries(${2:target} Qt5::${3:Core} Qt5::${4:Widgets})
+
+snippet boost
+find_package(Boost ${1:1.65} REQUIRED COMPONENTS ${2:system filesystem})
+target_link_libraries(${3:target} Boost::${4:system} Boost::${5:filesystem})
+
+snippet win32
+if(WIN32)
+	${0:# Windows specific code}
+endif()
+
+snippet unix
+if(UNIX)
+	${0:# Unix specific code}
+endif()
+
+snippet msvc
+if(MSVC)
+	${0:# MSVC specific code}
+endif()
+
+snippet gcc
+if(CMAKE_CXX_COMPILER_ID STREQUAL "GNU")
+	${0:# GCC specific code}
+endif()
+
+snippet clang
+if(CMAKE_CXX_COMPILER_ID STREQUAL "Clang")
+	${0:# Clang specific code}
+endif()
+
+snippet debug
+if(CMAKE_BUILD_TYPE STREQUAL "Debug")
+	${0:# Debug specific code}
+endif()
+
+snippet release
+if(CMAKE_BUILD_TYPE STREQUAL "Release")
+	${0:# Release specific code}
+endif()
+
+snippet modern
+cmake_minimum_required(VERSION 3.15)
+project(${1:ProjectName}
+	VERSION ${2:1.0.0}
+	LANGUAGES CXX
+)
+
+# C++ standard
+set(CMAKE_CXX_STANDARD ${3:17})
+set(CMAKE_CXX_STANDARD_REQUIRED ON)
+set(CMAKE_CXX_EXTENSIONS OFF)
+
+# Output directories
+set(CMAKE_RUNTIME_OUTPUT_DIRECTORY $\{CMAKE_BINARY_DIR}/bin)
+set(CMAKE_LIBRARY_OUTPUT_DIRECTORY $\{CMAKE_BINARY_DIR}/lib)
+set(CMAKE_ARCHIVE_OUTPUT_DIRECTORY $\{CMAKE_BINARY_DIR}/lib)
+
+# Sources
+file(GLOB_RECURSE SOURCES "src/*.cpp")
+file(GLOB_RECURSE HEADERS "include/*.h" "include/*.hpp")
+
+# Executable
+add_executable($1 $\{SOURCES})
+target_include_directories($1 PUBLIC include)
+
+# Install
+install(TARGETS $1 RUNTIME DESTINATION bin)
+${0}

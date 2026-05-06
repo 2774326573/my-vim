@@ -1,0 +1,22 @@
+{
+  "Typed React Function Component": {
+    "prefix": "rfc",
+    "body": ["type ${1:ComponentName}Props = {", "  ${2:// props}", "};", "", "export function ${1:ComponentName}(props: ${1:ComponentName}Props) {", "  return (", "    ${0:<div />}", "  );", "}"],
+    "description": "Typed React function component"
+  },
+  "Use State": {
+    "prefix": "state",
+    "body": ["const [${1:value}, set${2:Value}] = useState<${3:Type}>(${4:initialValue});"],
+    "description": "Typed useState hook"
+  },
+  "Use Effect": {
+    "prefix": "effect",
+    "body": ["useEffect(() => {", "  ${0:// effect}", "}, [${1:deps}]);"],
+    "description": "useEffect hook"
+  },
+  "Event Handler": {
+    "prefix": "handler",
+    "body": ["const ${1:handleClick} = (${2:event}: React.${3:MouseEvent<HTMLButtonElement>}) => {", "  ${0:// handle}", "};"],
+    "description": "Typed React event handler"
+  }
+}

@@ -2,9 +2,12 @@
   "configurations": {
     "Python - Launch Current File": {
       "adapter": "debugpy",
+      "filetypes": ["python"],
+      "default": true,
       "configuration": {
         "request": "launch",
         "type": "python",
+        "python": "${PythonPath:python}",
         "cwd": "${workspaceRoot}",
         "program": "${file}",
         "stopOnEntry": false,
@@ -14,6 +17,8 @@
     },
     "Python - Attach": {
       "adapter": "debugpy",
+      "filetypes": ["python"],
+      "autoselect": false,
       "configuration": {
         "request": "attach",
         "host": "localhost",
@@ -22,14 +27,18 @@
     },
     "C++ - Launch": {
       "adapter": "vscode-cpptools",
+      "filetypes": ["cpp", "cc", "cxx"],
+      "default": true,
       "configuration": {
         "request": "launch",
-        "program": "${workspaceRoot}/a.out",
+        "type": "cppdbg",
+        "program": "${CppProgram:${workspaceRoot}/a.out}",
         "args": [],
         "cwd": "${workspaceRoot}",
         "environment": [],
         "externalConsole": false,
         "MIMode": "gdb",
+        "miDebuggerPath": "${GdbPath:gdb}",
         "setupCommands": [
           {
             "description": "Enable pretty-printing for gdb",
@@ -39,16 +48,46 @@
         ]
       }
     },
-    "C - Launch": {
-      "adapter": "vscode-cpptools",
+    "C++ - Launch (CodeLLDB)": {
+      "adapter": "CodeLLDB",
+      "filetypes": ["cpp", "cc", "cxx"],
+      "autoselect": false,
       "configuration": {
         "request": "launch",
-        "program": "${workspaceRoot}/a.out",
+        "type": "lldb",
+        "program": "${CppProgram:${workspaceRoot}/a.out}",
+        "args": [],
+        "cwd": "${workspaceRoot}",
+        "stopOnEntry": false
+      }
+    },
+    "C - Launch": {
+      "adapter": "vscode-cpptools",
+      "filetypes": ["c"],
+      "default": true,
+      "configuration": {
+        "request": "launch",
+        "type": "cppdbg",
+        "program": "${CppProgram:${workspaceRoot}/a.out}",
         "args": [],
         "cwd": "${workspaceRoot}",
         "environment": [],
         "externalConsole": false,
-        "MIMode": "gdb"
+        "MIMode": "gdb",
+        "miDebuggerPath": "${GdbPath:gdb}"
+      }
+    },
+    "C - Launch (CodeLLDB)": {
+      "adapter": "CodeLLDB",
+      "filetypes": ["c"],
+      "autoselect": false,
+      "configuration": {
+        "request": "launch",
+        "type": "lldb",
+        "program": "${CppProgram:${workspaceRoot}/a.out}",
+        "args": [],
+        "cwd": "${workspaceRoot}",
+        "stopOnEntry": false
       }
     }
   }

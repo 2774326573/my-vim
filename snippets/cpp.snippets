@@ -1,0 +1,157 @@
+# Main function
+snippet main
+	int main() {
+		${1:// TODO}
+		return 0;
+	}
+
+# Main with args
+snippet maina
+	int main(int argc, char* argv[]) {
+		${1:// TODO}
+		return 0;
+	}
+
+# Include header
+snippet inc
+	#include <${1:iostream}>
+
+# Include custom header
+snippet incq
+	#include "${1:header.h}"
+
+# Class definition
+snippet class
+	class ${1:ClassName} {
+	public:
+		$1();
+		~$1();
+		${2:// Methods}
+	private:
+		${3:// Members}
+	};
+
+# Struct definition
+snippet struct
+	struct ${1:Name} {
+		${0:// Members}
+	};
+
+# Namespace
+snippet ns
+	namespace ${1:name} {
+		${0:// Code}
+	} // namespace $1
+
+# Function
+snippet fn
+	${1:void} ${2:functionName}(${3:params}) {
+		${0:// TODO}
+	}
+
+# For loop
+snippet for
+	for (size_t ${1:i} = 0; $1 < ${2:count}; ++$1) {
+		${0:// Code}
+	}
+
+# Range-based for
+snippet forr
+	for (${1:auto}& ${2:item} : ${3:container}) {
+		${0:// Code}
+	}
+
+# If statement
+snippet if
+	if (${1:condition}) {
+		${0:// Code}
+	}
+
+# Else if
+snippet elif
+	else if (${1:condition}) {
+		${0:// Code}
+	}
+
+# Else
+snippet else
+	else {
+		${0:// Code}
+	}
+
+# While loop
+snippet while
+	while (${1:condition}) {
+		${0:// Code}
+	}
+
+# Switch statement
+snippet switch
+	switch (${1:var}) {
+		case ${2:value}:
+			${3:// Code}
+			break;
+		default:
+			${0:// Default}
+			break;
+	}
+
+# Vector
+snippet vec
+	std::vector<${1:int}> ${2:vec};
+
+# Map
+snippet map
+	std::map<${1:Key}, ${2:Value}> ${3:map};
+
+# Set
+snippet set
+	std::set<${1:int}> ${2:set};
+
+# Cout
+snippet cout
+	std::cout << ${1:message} << std::endl;
+
+# Cerr
+snippet cerr
+	std::cerr << ${1:error} << std::endl;
+
+# Lambda expression
+snippet lambda
+	[${1:capture}](${2:params}) {
+		${0:// Code}
+	}
+
+# Try-catch
+snippet try
+	try {
+		${1:// Code}
+	} catch (${2:const std::exception& e}) {
+		${0:// Handle}
+	}
+
+# unique_ptr
+snippet unique
+	std::make_unique<${1:Type}>(${0:args})
+
+# shared_ptr
+snippet shared
+	std::make_shared<${1:Type}>(${0:args})
+
+# Template function
+snippet template
+	template<typename ${1:T}>
+	${2:void} ${3:functionName}(${4:params}) {
+		${0:// Code}
+	}
+
+# Thread
+snippet thread
+	std::thread ${1:t}([${2:capture}]() {
+		${0:// Code}
+	});
+
+# Mutex lock
+snippet mutex
+	std::lock_guard<std::mutex> ${1:lock}(${2:mutex});
+	${0}

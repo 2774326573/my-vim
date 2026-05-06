@@ -1,0 +1,121 @@
+snippet fn
+function ${1:name}(${2:params}) {
+	${0:// Code}
+}
+
+snippet afn
+const ${1:name} = (${2:params}) => {
+	${0:// Code}
+};
+
+snippet class
+class ${1:ClassName} {
+	constructor(${2:params}) {
+		${0:// Init}
+	}
+}
+
+snippet method
+${1:methodName}(${2:params}) {
+	${0:// Code}
+}
+
+snippet log
+console.log(${0:message});
+
+snippet warn
+console.warn(${0:warning});
+
+snippet error
+console.error(${0:error});
+
+snippet for
+for (let ${1:i} = 0; $1 < ${2:length}; $1++) {
+	${0:// Code}
+}
+
+snippet forof
+for (const ${1:item} of ${2:array}) {
+	${0:// Code}
+}
+
+snippet forin
+for (const ${1:key} in ${2:object}) {
+	${0:// Code}
+}
+
+snippet if
+if (${1:condition}) {
+	${0:// Code}
+}
+
+snippet elif
+else if (${1:condition}) {
+	${0:// Code}
+}
+
+snippet else
+else {
+	${0:// Code}
+}
+
+snippet switch
+switch (${1:var}) {
+	case ${2:value}:
+		${3:// Code}
+		break;
+	default:
+		${0:// Default}
+		break;
+}
+
+snippet try
+try {
+	${1:// Code}
+} catch (${2:error}) {
+	${0:// Handle}
+}
+
+snippet promise
+new Promise((resolve, reject) => {
+	${0:// Code}
+});
+
+snippet async
+async function ${1:name}(${2:params}) {
+	${0:// Code}
+}
+
+snippet await
+const ${1:result} = await ${0:promise};
+
+snippet import
+import ${1:module} from '${0:path}';
+
+snippet export
+export ${1:const} ${0:name};
+
+snippet map
+${1:array}.map(${2:item} => ${0:item})
+
+snippet filter
+${1:array}.filter(${2:item} => ${0:condition})
+
+snippet reduce
+${1:array}.reduce((${2:acc}, ${3:item}) => ${0:acc}, ${4:initial})
+
+snippet fetch
+fetch('${1:url}')
+	.then(response => response.json())
+	.then(data => ${0:console.log(data)})
+	.catch(error => console.error(error));
+
+snippet settimeout
+setTimeout(() => {
+	${0:// Code}
+}, ${1:1000});
+
+snippet setinterval
+setInterval(() => {
+	${0:// Code}
+}, ${1:1000});

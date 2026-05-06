@@ -1,0 +1,22 @@
+{
+  "React Function Component": {
+    "prefix": "rfc",
+    "body": ["export function ${1:ComponentName}(${2:props}) {", "  return (", "    ${0:<div />}", "  );", "}"],
+    "description": "React function component"
+  },
+  "Use State": {
+    "prefix": "state",
+    "body": ["const [${1:value}, set${2:Value}] = useState(${3:initialValue});"],
+    "description": "useState hook"
+  },
+  "Use Effect": {
+    "prefix": "effect",
+    "body": ["useEffect(() => {", "  ${0:// effect}", "}, [${1:deps}]);"],
+    "description": "useEffect hook"
+  },
+  "JSX Map": {
+    "prefix": "mapjsx",
+    "body": ["${1:items}.map((${2:item}) => (", "  <${3:div} key={${2:item}.${4:id}}>", "    ${0}", "  </${3:div}>", "))"],
+    "description": "Map items to JSX"
+  }
+}

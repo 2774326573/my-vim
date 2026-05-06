@@ -1,1 +1,47 @@
-pack/github/
+# =============== my-vim（运行时/本地文件忽略） ===============
+# 说明：本仓库的“运行时数据”默认收敛在 data/ 下。
+# 是否要把 data/ 里的离线资源提交到 Git 取决于你的发布方式：
+# - 如果你用脚本在“有网机器”生成离线包再拷贝：建议忽略大部分 data/
+# - 如果你希望 Git 仓库本身就是离线包：可以按需取消忽略（或用 git add -f）
+
+# ---- data/ 下的运行时缓存（通常不需要提交） ----
+data/viminfo
+data/undodir/
+data/sessions/
+tools/
+
+# Coc 的个人数据（extensions/ 是否忽略取决于是否需要离线）
+data/coc-data/memos.json
+
+# ---- data/ 下的离线资源（按需忽略；默认保持忽略以减少仓库体积） ----
+data/plugged/
+data/fzf/
+data/vimspector/
+data/coc-data/extensions/
+
+# ---- 兼容旧路径（如果你曾在根目录生成过这些目录） ----
+plugged/
+fzf/
+undodir/
+sessions/
+.vim-debug/
+
+# ---- Vim 临时文件 ----
+*.swp
+*.swo
+*~
+.*.swp
+.*.swo
+*.tmp
+
+# ---- 备份文件 ----
+*.backup
+*.bak
+
+# ---- VS Code 本地目录（若你希望纳入仓库，可删除这一段） ----
+.vscode/
+
+# ---- 系统文件 ----
+.DS_Store
+Thumbs.db
+desktop.ini

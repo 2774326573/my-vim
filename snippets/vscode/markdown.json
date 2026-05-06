@@ -1,0 +1,56 @@
+{
+  "Heading 1": {
+    "prefix": "h1",
+    "body": ["# ${1:title}"],
+    "description": "Markdown heading level 1"
+  },
+  "Heading 2": {
+    "prefix": "h2",
+    "body": ["## ${1:title}"],
+    "description": "Markdown heading level 2"
+  },
+  "Heading 3": {
+    "prefix": "h3",
+    "body": ["### ${1:title}"],
+    "description": "Markdown heading level 3"
+  },
+  "Code Block": {
+    "prefix": "code",
+    "body": ["```${1:language}", "${2:code}", "```"],
+    "description": "Fenced code block"
+  },
+  "Inline Code": {
+    "prefix": "c",
+    "body": ["`${1:code}`"],
+    "description": "Inline code"
+  },
+  "Link": {
+    "prefix": "link",
+    "body": ["[${1:text}](${2:url})"],
+    "description": "Markdown link"
+  },
+  "Image": {
+    "prefix": "img",
+    "body": ["![${1:alt}](${2:url})"],
+    "description": "Markdown image"
+  },
+  "Task": {
+    "prefix": "task",
+    "body": ["- [ ] ${1:task}"],
+    "description": "Task list item"
+  },
+  "Table": {
+    "prefix": "table",
+    "body": [
+      "| ${1:Header 1} | ${2:Header 2} |",
+      "| ------------- | ------------- |",
+      "| ${3:Cell 1} | ${4:Cell 2} |"
+    ],
+    "description": "Markdown table"
+  },
+  "Quote": {
+    "prefix": "quote",
+    "body": ["> ${1:quote}"],
+    "description": "Block quote"
+  }
+}

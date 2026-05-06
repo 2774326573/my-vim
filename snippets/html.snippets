@@ -1,0 +1,94 @@
+snippet html5
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>${1:Title}</title>
+	${2:<link rel="stylesheet" href="style.css">}
+</head>
+<body>
+	${0:<!-- Content -->}
+	${3:<script src="script.js"></script>}
+</body>
+</html>
+
+snippet div
+<div class="${1:class}">
+	${0:content}
+</div>
+
+snippet span
+<span class="${1:class}">${0:text}</span>
+
+snippet a
+<a href="${1:#}">${0:text}</a>
+
+snippet img
+<img src="${1:url}" alt="${0:description}">
+
+snippet ul
+<ul>
+	<li>${0:item}</li>
+</ul>
+
+snippet ol
+<ol>
+	<li>${0:item}</li>
+</ol>
+
+snippet table
+<table>
+	<thead>
+		<tr>
+			<th>${1:Header}</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>${0:Data}</td>
+		</tr>
+	</tbody>
+</table>
+
+snippet form
+<form action="${1:#}" method="${2:post}">
+	${0:<!-- Form fields -->}
+	<button type="submit">Submit</button>
+</form>
+
+snippet input
+<input type="${1:text}" name="${2:name}" placeholder="${0:placeholder}">
+
+snippet button
+<button type="${1:button}">${0:Click}</button>
+
+snippet header
+<header>
+	${0:<!-- Header content -->}
+</header>
+
+snippet nav
+<nav>
+	${0:<!-- Navigation -->}
+</nav>
+
+snippet main
+<main>
+	${0:<!-- Main content -->}
+</main>
+
+snippet footer
+<footer>
+	${0:<!-- Footer content -->}
+</footer>
+
+snippet section
+<section>
+	${0:<!-- Section content -->}
+</section>
+
+snippet article
+<article>
+	${0:<!-- Article content -->}
+</article>

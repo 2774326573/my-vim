@@ -1,0 +1,170 @@
+{
+  "Main": {
+    "prefix": "main",
+    "body": ["int main() {", "  ${1:// TODO}", "  return 0;", "}"],
+    "description": "C++ main function"
+  },
+  "Main With Args": {
+    "prefix": "maina",
+    "body": ["int main(int argc, char* argv[]) {", "  ${1:// TODO}", "  return 0;", "}"],
+    "description": "C++ main function with arguments"
+  },
+  "Include": {
+    "prefix": "inc",
+    "body": ["#include <${1:iostream}>"],
+    "description": "Include system header"
+  },
+  "Fast IO": {
+    "prefix": "fastio",
+    "body": ["std::ios::sync_with_stdio(false);", "std::cin.tie(nullptr);"],
+    "description": "Fast iostream setup"
+  },
+  "Class": {
+    "prefix": "class",
+    "body": ["class ${1:ClassName} {", "public:", "  ${1:ClassName}() = default;", "  ~${1:ClassName}() = default;", "", "private:", "  ${2:// members}", "};"],
+    "description": "Class definition"
+  },
+  "Full Class": {
+    "prefix": "classfull",
+    "body": [
+      "class ${1:ClassName} {",
+      "public:",
+      "  ${1:ClassName}();",
+      "  ~${1:ClassName}();",
+      "",
+      "  ${2:void} ${3:methodName}(${4:params});",
+      "",
+      "private:",
+      "  ${5:// members}",
+      "};"
+    ],
+    "description": "Full class declaration"
+  },
+  "Class Implementation": {
+    "prefix": "classimpl",
+    "body": [
+      "${1:ClassName}::${1:ClassName}() {",
+      "  ${2:// init}",
+      "}",
+      "",
+      "${1:ClassName}::~${1:ClassName}() {",
+      "  ${3:// cleanup}",
+      "}",
+      "",
+      "${4:void} ${1:ClassName}::${5:methodName}(${6:params}) {",
+      "  ${0:// TODO}",
+      "}"
+    ],
+    "description": "Class constructor/destructor and method definitions"
+  },
+  "Function": {
+    "prefix": "fn",
+    "body": ["${1:void} ${2:functionName}(${3:params}) {", "  ${0:// TODO}", "}"],
+    "description": "Function definition"
+  },
+  "Function Declaration": {
+    "prefix": "fnd",
+    "body": ["${1:void} ${2:functionName}(${3:params});"],
+    "description": "Function declaration"
+  },
+  "Member Function Declaration": {
+    "prefix": "method",
+    "body": ["${1:void} ${2:methodName}(${3:params});"],
+    "description": "Member function declaration"
+  },
+  "Member Function Definition": {
+    "prefix": "methoddef",
+    "body": ["${1:void} ${2:ClassName}::${3:methodName}(${4:params}) {", "  ${0:// TODO}", "}"],
+    "description": "Out-of-class member function definition"
+  },
+  "Template Function": {
+    "prefix": "tfn",
+    "body": ["template <typename ${1:T}>", "${2:void} ${3:functionName}(${4:${1:T} value}) {", "  ${0:// TODO}", "}"],
+    "description": "Template function definition"
+  },
+  "Template Class": {
+    "prefix": "tclass",
+    "body": [
+      "template <typename ${1:T}>",
+      "class ${2:ClassName} {",
+      "public:",
+      "  ${2:ClassName}() = default;",
+      "  ~${2:ClassName}() = default;",
+      "",
+      "private:",
+      "  ${3:${1:T} value_;}",
+      "};"
+    ],
+    "description": "Template class definition"
+  },
+  "Template Method Definition": {
+    "prefix": "tmethoddef",
+    "body": ["template <typename ${1:T}>", "${2:void} ${3:ClassName}<${1:T}>::${4:methodName}(${5:params}) {", "  ${0:// TODO}", "}"],
+    "description": "Template class member function definition"
+  },
+  "Header File": {
+    "prefix": "hpp",
+    "body": ["#pragma once", "", "namespace ${1:app} {", "", "${0}", "", "} // namespace ${1:app}"],
+    "description": "C++ header template"
+  },
+  "Namespace": {
+    "prefix": "ns",
+    "body": ["namespace ${1:name} {", "", "${0}", "", "} // namespace ${1:name}"],
+    "description": "Namespace block"
+  },
+  "For Index": {
+    "prefix": "for",
+    "body": ["for (std::size_t ${1:i} = 0; ${1:i} < ${2:count}; ++${1:i}) {", "  ${0:// code}", "}"],
+    "description": "Index for loop"
+  },
+  "Range For": {
+    "prefix": "forr",
+    "body": ["for (${1:const auto&} ${2:item} : ${3:container}) {", "  ${0:// code}", "}"],
+    "description": "Range-based for loop"
+  },
+  "If": {
+    "prefix": "if",
+    "body": ["if (${1:condition}) {", "  ${0:// code}", "}"],
+    "description": "If statement"
+  },
+  "Switch": {
+    "prefix": "switch",
+    "body": ["switch (${1:value}) {", "case ${2:label}:", "  ${3:// code}", "  break;", "default:", "  ${0:// default}", "  break;", "}"],
+    "description": "Switch statement"
+  },
+  "Try Catch": {
+    "prefix": "try",
+    "body": ["try {", "  ${1:// code}", "} catch (const std::exception& ${2:e}) {", "  ${0:// handle}", "}"],
+    "description": "Try/catch block"
+  },
+  "Vector": {
+    "prefix": "vec",
+    "body": ["std::vector<${1:int}> ${2:values};"],
+    "description": "std::vector declaration"
+  },
+  "Map": {
+    "prefix": "map",
+    "body": ["std::map<${1:Key}, ${2:Value}> ${3:items};"],
+    "description": "std::map declaration"
+  },
+  "Cout": {
+    "prefix": "cout",
+    "body": ["std::cout << ${1:value} << std::endl;"],
+    "description": "Print to stdout"
+  },
+  "Lambda": {
+    "prefix": "lambda",
+    "body": ["[${1:capture}](${2:params}) {", "  ${0:// code}", "}"],
+    "description": "Lambda expression"
+  },
+  "Unique Ptr": {
+    "prefix": "unique",
+    "body": ["auto ${1:name} = std::make_unique<${2:Type}>(${3:args});"],
+    "description": "Create unique_ptr"
+  },
+  "Shared Ptr": {
+    "prefix": "shared",
+    "body": ["auto ${1:name} = std::make_shared<${2:Type}>(${3:args});"],
+    "description": "Create shared_ptr"
+  }
+}

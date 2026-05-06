@@ -1,0 +1,77 @@
+snippet def
+def ${1:function_name}(${2:params}):
+	${0:pass}
+
+snippet deft
+def ${1:function_name}(${2:param}: ${3:type}) -> ${4:return_type}:
+	${0:pass}
+
+snippet class
+class ${1:ClassName}:
+	def __init__(self${2:, params}):
+		${0:pass}
+
+snippet init
+def __init__(self${1:, params}):
+	${0:pass}
+
+snippet for
+for ${1:item} in ${2:iterable}:
+	${0:pass}
+
+snippet if
+if ${1:condition}:
+	${0:pass}
+
+snippet elif
+elif ${1:condition}:
+	${0:pass}
+
+snippet else
+else:
+	${0:pass}
+
+snippet while
+while ${1:condition}:
+	${0:pass}
+
+snippet try
+try:
+	${1:pass}
+except ${2:Exception} as ${3:e}:
+	${0:pass}
+
+snippet with
+with ${1:expression} as ${2:var}:
+	${0:pass}
+
+snippet imp
+import ${0:module}
+
+snippet from
+from ${1:module} import ${0:name}
+
+snippet main
+if __name__ == "__main__":
+	${0:pass}
+
+snippet lambda
+lambda ${1:params}: ${0:expression}
+
+snippet list
+[${1:expression} for ${2:item} in ${3:iterable}${4: if condition}]
+
+snippet dict
+{${1:key}: ${2:value} for ${3:item} in ${4:iterable}}
+
+snippet property
+@property
+def ${1:name}(self):
+	return self._$1
+
+snippet dataclass
+from dataclasses import dataclass
+
+@dataclass
+class ${1:ClassName}:
+	${2:field}: ${0:type}

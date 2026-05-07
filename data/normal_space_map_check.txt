@@ -1,0 +1,266 @@
+
+
+n  <Space>uf   * :set foldenable!<CR>
+	最近修改于 ~\my-vim\config\keymaps.vim 行 352
+n  <Space>ux   * :set cursorcolumn!<CR>
+	最近修改于 ~\my-vim\config\keymaps.vim 行 351
+n  <Space>uc   * :set cursorline!<CR>
+	最近修改于 ~\my-vim\config\keymaps.vim 行 350
+n  <Space>ul   * :set list!<CR>
+	最近修改于 ~\my-vim\config\keymaps.vim 行 349
+n  <Space>us   * :set spell!<CR>
+	最近修改于 ~\my-vim\config\keymaps.vim 行 348
+n  <Space>un   * :set number!<CR>
+	最近修改于 ~\my-vim\config\keymaps.vim 行 347
+n  <Space>ur   * :set relativenumber!<CR>
+	最近修改于 ~\my-vim\config\keymaps.vim 行 346
+n  <Space>uw   * :set wrap!<CR>
+	最近修改于 ~\my-vim\config\keymaps.vim 行 345
+n  <Space>zc   * zc
+	最近修改于 ~\my-vim\config\keymaps.vim 行 342
+n  <Space>zo   * zo
+	最近修改于 ~\my-vim\config\keymaps.vim 行 341
+n  <Space>zr   * zR
+	最近修改于 ~\my-vim\config\keymaps.vim 行 340
+n  <Space>zm   * zM
+	最近修改于 ~\my-vim\config\keymaps.vim 行 339
+n  <Space>zz   * za
+	最近修改于 ~\my-vim\config\keymaps.vim 行 338
+n  <Space>uu   * :UndotreeToggle<CR>
+	最近修改于 ~\my-vim\config\keymaps.vim 行 334
+n  <Space>u    * :UndotreeToggle<CR>
+	最近修改于 ~\my-vim\config\keymaps.vim 行 333
+n  <Space>ta   * :TableModeRealign<CR>
+	最近修改于 ~\my-vim\config\keymaps.vim 行 312
+n  <Space>tm   * :<C-U>call tablemode#Toggle()<CR>
+	最近修改于 ~\my-vim\data\plugged\vim-table-mode\plugin\table-mode.vim 行 74
+n  <Space>mo   * :GenTocGFM<CR>
+	最近修改于 ~\my-vim\config\keymaps.vim 行 310
+n  <Space>mt   * :MarkdownPreviewToggle<CR>
+	最近修改于 ~\my-vim\config\keymaps.vim 行 309
+n  <Space>ms   * :MarkdownPreviewStop<CR>
+	最近修改于 ~\my-vim\config\keymaps.vim 行 308
+n  <Space>mp   * :MarkdownPreview<CR>
+	最近修改于 ~\my-vim\config\keymaps.vim 行 307
+n  <Space>Sc   * :SClose<CR>
+	最近修改于 ~\my-vim\config\keymaps.vim 行 297
+n  <Space>Sd   * :SDelete<CR>
+	最近修改于 ~\my-vim\config\keymaps.vim 行 296
+n  <Space>Sl   * :SLoad<CR>
+	最近修改于 ~\my-vim\config\keymaps.vim 行 295
+n  <Space>SS   * :SSave!<CR>
+	最近修改于 ~\my-vim\config\keymaps.vim 行 294
+n  <Space>Ss   * :Startify<CR>
+	最近修改于 ~\my-vim\config\keymaps.vim 行 293
+n  <Space>Tm   * :ThemeAyuMirage<CR>
+	最近修改于 ~\my-vim\config\keymaps.vim 行 290
+n  <Space>TA   * :ThemeAyuLight<CR>
+	最近修改于 ~\my-vim\config\keymaps.vim 行 289
+n  <Space>Ta   * :ThemeAyu<CR>
+	最近修改于 ~\my-vim\config\keymaps.vim 行 288
+n  <Space>Tn   * :ThemeNord<CR>
+	最近修改于 ~\my-vim\config\keymaps.vim 行 287
+n  <Space>Td   * :ThemeDracula<CR>
+	最近修改于 ~\my-vim\config\keymaps.vim 行 286
+n  <Space>To   * :ThemeOneDark<CR>
+	最近修改于 ~\my-vim\config\keymaps.vim 行 285
+n  <Space>Tl   * :ThemeGruvboxLight<CR>
+	最近修改于 ~\my-vim\config\keymaps.vim 行 284
+n  <Space>Tg   * :ThemeGruvbox<CR>
+	最近修改于 ~\my-vim\config\keymaps.vim 行 283
+n  <Space>ct   * :CMakeSelectBuildType<CR>
+	最近修改于 ~\my-vim\config\keymaps.vim 行 280
+n  <Space>cr   * :CMakeRun<CR>
+	最近修改于 ~\my-vim\config\keymaps.vim 行 279
+n  <Space>cb   * :CMakeBuild<CR>
+	最近修改于 ~\my-vim\config\keymaps.vim 行 278
+n  <Space>cg   * :CMakeGenerate<CR>
+	最近修改于 ~\my-vim\config\keymaps.vim 行 277
+n  <Space>dI   * :MyVimDebugInstall<CR>
+	最近修改于 ~\my-vim\config\keymaps.vim 行 274
+n  <Space>dS   * :MyVimDebugStatus<CR>
+	最近修改于 ~\my-vim\config\keymaps.vim 行 273
+n  <Space>ht   * :HtmlPreviewToggle<CR>
+	最近修改于 ~\my-vim\config\keymaps.vim 行 254
+n  <Space>hs   * :HtmlPreviewStop<CR>
+	最近修改于 ~\my-vim\config\keymaps.vim 行 253
+n  <Space>hp   * :HtmlPreviewStart<CR>
+	最近修改于 ~\my-vim\config\keymaps.vim 行 252
+n  <Space>sS   * :CocCommand snippets.openSnippetFiles<CR>
+	最近修改于 ~\my-vim\config\keymaps.vim 行 187
+n  <Space>cs   * :CocList outline<CR>
+	最近修改于 ~\my-vim\config\keymaps.vim 行 186
+n  <Space>cd   * :CocDiagnostics<CR>
+	最近修改于 ~\my-vim\config\keymaps.vim 行 185
+n  <Space>cf   * :call CocActionAsync('format')<CR>
+	最近修改于 ~\my-vim\config\keymaps.vim 行 182
+n  <Space>ca     <Plug>(coc-codeaction-cursor)
+	最近修改于 ~\my-vim\config\keymaps.vim 行 181
+n  <Space>rn     <Plug>(coc-rename)
+	最近修改于 ~\my-vim\config\keymaps.vim 行 180
+n  <Space>cc   * :Commentary<CR>
+	最近修改于 ~\my-vim\config\keymaps.vim 行 164
+n  <Space>aa   * :EasyAlign<CR>
+	最近修改于 ~\my-vim\config\keymaps.vim 行 160
+n  <Space><Tab>l * :tablast<CR>
+	最近修改于 ~\my-vim\config\keymaps.vim 行 81
+n  <Space><Tab>f * :tabfirst<CR>
+	最近修改于 ~\my-vim\config\keymaps.vim 行 80
+n  <Space><Tab>[ * :tabprevious<CR>
+	最近修改于 ~\my-vim\config\keymaps.vim 行 79
+n  <Space><Tab>] * :tabnext<CR>
+	最近修改于 ~\my-vim\config\keymaps.vim 行 78
+n  <Space><Tab>o * :tabonly<CR>
+	最近修改于 ~\my-vim\config\keymaps.vim 行 77
+n  <Space><Tab>d * :tabclose<CR>
+	最近修改于 ~\my-vim\config\keymaps.vim 行 76
+n  <Space><Tab><Tab> * :tabnew<CR>
+	最近修改于 ~\my-vim\config\keymaps.vim 行 75
+n  <Space>bo   * :bufdo bd<CR>
+	最近修改于 ~\my-vim\config\keymaps.vim 行 68
+n  <Space>bD   * :bdelete!<CR>
+	最近修改于 ~\my-vim\config\keymaps.vim 行 67
+n  <Space>bd   * :bdelete<CR>
+	最近修改于 ~\my-vim\config\keymaps.vim 行 66
+n  <Space>bb   * :MyVimBuffers<CR>
+	最近修改于 ~\my-vim\config\keymaps.vim 行 65
+n  <Space>=    * <C-W>=
+	最近修改于 ~\my-vim\config\keymaps.vim 行 62
+n  <Space>-    * :split<CR>
+	最近修改于 ~\my-vim\config\keymaps.vim 行 54
+n  <Space>wo   * <C-W>o
+	最近修改于 ~\my-vim\config\keymaps.vim 行 53
+n  <Space>wv   * :vsplit<CR>
+	最近修改于 ~\my-vim\config\keymaps.vim 行 52
+n  <Space>ws   * :split<CR>
+	最近修改于 ~\my-vim\config\keymaps.vim 行 51
+n  <Space>wd   * <C-W>c
+	最近修改于 ~\my-vim\config\keymaps.vim 行 50
+n  <Space>ww   * <C-W>w
+	最近修改于 ~\my-vim\config\keymaps.vim 行 49
+n  <Space>fe   * :NERDTreeToggle<CR>
+	最近修改于 ~\my-vim\config\keymaps.vim 行 38
+n  <Space>nf   * :NERDTreeFind<CR>
+	最近修改于 ~\my-vim\config\keymaps.vim 行 37
+n  <Space>e    * :NERDTreeToggle<CR>
+	最近修改于 ~\my-vim\config\keymaps.vim 行 36
+n  <Space>:    * :MyVimCommandHistory<CR>
+	最近修改于 ~\my-vim\config\keymaps.vim 行 32
+n  <Space>,    * :MyVimBuffers<CR>
+	最近修改于 ~\my-vim\config\keymaps.vim 行 31
+n  <Space>/    * :MyVimGrep<CR>
+	最近修改于 ~\my-vim\config\keymaps.vim 行 30
+n  <Space>fn   * :enew<CR>
+	最近修改于 ~\my-vim\config\keymaps.vim 行 26
+n  <Space>fw   * :MyVimWindows<CR>
+	最近修改于 ~\my-vim\config\keymaps.vim 行 25
+n  <Space>fm   * :MyVimMarks<CR>
+	最近修改于 ~\my-vim\config\keymaps.vim 行 24
+n  <Space>fc   * :MyVimCommandHistory<CR>
+	最近修改于 ~\my-vim\config\keymaps.vim 行 23
+n  <Space>fr   * :MyVimHistory<CR>
+	最近修改于 ~\my-vim\config\keymaps.vim 行 22
+n  <Space>fh   * :MyVimHelptags<CR>
+	最近修改于 ~\my-vim\config\keymaps.vim 行 21
+n  <Space>fb   * :MyVimBuffers<CR>
+	最近修改于 ~\my-vim\config\keymaps.vim 行 20
+n  <Space>fg   * :MyVimGrep<CR>
+	最近修改于 ~\my-vim\config\keymaps.vim 行 19
+n  <Space>ff   * :MyVimFiles<CR>
+	最近修改于 ~\my-vim\config\keymaps.vim 行 18
+n  <Space>nh   * :nohlsearch<CR>
+	最近修改于 ~\my-vim\config\keymaps.vim 行 15
+n  <Space>qq   * :qa<CR>
+	最近修改于 ~\my-vim\config\keymaps.vim 行 11
+n  <Space>x    * :x<CR>
+	最近修改于 ~\my-vim\config\keymaps.vim 行 10
+n  <Space>Q    * :qa!<CR>
+	最近修改于 ~\my-vim\config\keymaps.vim 行 9
+n  <Space>q    * :q<CR>
+	最近修改于 ~\my-vim\config\keymaps.vim 行 8
+n  <Space>w    * :w<CR>
+	最近修改于 ~\my-vim\config\keymaps.vim 行 7
+n  <Space>?    * :echo "Leader键帮助:  w=保存  q=退出  e=文件树  ff=查找  fg=搜索"<CR>
+	最近修改于 ~\my-vim\config\keymaps.vim 行 4
+   <Space><Space>   <Plug>(easymotion-prefix)
+	最近修改于 ~\my-vim\data\plugged\vim-easymotion\plugin\EasyMotion.vim 行 244
+n  <Space>     * :<C-U>WhichKey ' '<CR>
+	最近修改于 ~\my-vim\config\plugin-config.vim 行 1836
+n  <Space>Dl   * :DBUILastQueryInfo<CR>
+	最近修改于 ~\my-vim\config\keymaps.vim 行 304
+n  <Space>Dr   * :DBUIRenameBuffer<CR>
+	最近修改于 ~\my-vim\config\keymaps.vim 行 303
+n  <Space>Df   * :DBUIFindBuffer<CR>
+	最近修改于 ~\my-vim\config\keymaps.vim 行 302
+n  <Space>Da   * :DBUIAddConnection<CR>
+	最近修改于 ~\my-vim\config\keymaps.vim 行 301
+n  <Space>Du   * :DBUIToggle<CR>
+	最近修改于 ~\my-vim\config\keymaps.vim 行 300
+n  <Space>se   * :split<CR>:e ~/my-vim/snippets/<C-R>=&filetype<CR>.snippets<CR>
+	最近修改于 ~\my-vim\config\keymaps.vim 行 335
+n  <Space>trz  * :TransReplace en_zh<CR>
+	最近修改于 ~\my-vim\config\keymaps.vim 行 328
+n  <Space>tre  * :TransReplace zh_en<CR>
+	最近修改于 ~\my-vim\config\keymaps.vim 行 326
+n  <Space>tr   * :TransReplace<CR>
+	最近修改于 ~\my-vim\config\keymaps.vim 行 324
+n  <Space>tE   * :call SimpleTranslate('zh_en')<CR>
+	最近修改于 ~\my-vim\config\keymaps.vim 行 322
+n  <Space>tZ   * :call SimpleTranslate('en_zh')<CR>
+	最近修改于 ~\my-vim\config\keymaps.vim 行 320
+n  <Space>ts   * :call SimpleTranslate()<CR>
+	最近修改于 ~\my-vim\config\plugin-config.vim 行 1074
+n  <Space>tt     <Plug>(table-mode-tableize)
+	最近修改于 ~\my-vim\data\plugged\vim-table-mode\plugin\table-mode.vim 行 123
+n  <Space>tw   * :call SimpleTranslate()<CR>
+	最近修改于 ~\my-vim\config\keymaps.vim 行 316
+n  <Space>dR   * :call vimspector#Reset()<CR>
+	最近修改于 ~\my-vim\config\keymaps.vim 行 272
+n  <Space>du   * :call vimspector#ToggleUI()<CR>
+	最近修改于 ~\my-vim\config\keymaps.vim 行 271
+n  <Space>dt   * :call vimspector#RunToCursor()<CR>
+	最近修改于 ~\my-vim\config\keymaps.vim 行 270
+n  <Space>dO   * :call vimspector#StepOut()<CR>
+	最近修改于 ~\my-vim\config\keymaps.vim 行 269
+n  <Space>do   * :call vimspector#StepOut()<CR>
+	最近修改于 ~\my-vim\config\keymaps.vim 行 268
+n  <Space>di   * :call vimspector#StepInto()<CR>
+	最近修改于 ~\my-vim\config\keymaps.vim 行 267
+n  <Space>dn   * :call vimspector#StepOver()<CR>
+	最近修改于 ~\my-vim\config\keymaps.vim 行 266
+n  <Space>dD   * :call vimspector#ClearBreakpoints()<CR>
+	最近修改于 ~\my-vim\config\keymaps.vim 行 265
+n  <Space>dB   * :call vimspector#AddFunctionBreakpoint()<CR>
+	最近修改于 ~\my-vim\config\keymaps.vim 行 264
+n  <Space>db   * :call vimspector#ToggleBreakpoint()<CR>
+	最近修改于 ~\my-vim\config\keymaps.vim 行 263
+n  <Space>dp   * :call vimspector#Pause()<CR>
+	最近修改于 ~\my-vim\config\keymaps.vim 行 262
+n  <Space>dr   * :call vimspector#Restart()<CR>
+	最近修改于 ~\my-vim\config\keymaps.vim 行 261
+n  <Space>ds   * :call vimspector#Stop()<CR>
+	最近修改于 ~\my-vim\config\keymaps.vim 行 260
+n  <Space>dc   * :call vimspector#Continue()<CR>
+	最近修改于 ~\my-vim\config\keymaps.vim 行 259
+n  <Space>dm   * :MyVimDebugBuildCurrent<CR>
+	最近修改于 ~\my-vim\config\keymaps.vim 行 258
+n  <Space>dd   * :MyVimDebugCurrent<CR>
+	最近修改于 ~\my-vim\config\keymaps.vim 行 257
+n  <Space>vf   * :Vista finder<CR>
+	最近修改于 ~\my-vim\config\plugin-config.vim 行 386
+n  <Space>v    * :Vista!!<CR>
+	最近修改于 ~\my-vim\config\plugin-config.vim 行 385
+n  <Space>tb   * :TagbarToggle<CR>
+	最近修改于 ~\my-vim\config\plugin-config.vim 行 339
+n  <Space>ig   * :IndentGuidesToggle<CR>
+	最近修改于 ~\my-vim\config\plugin-config.vim 行 35
+
+n  <Space>     * :<C-U>WhichKey ' '<CR>
+	最近修改于 ~\my-vim\config\plugin-config.vim 行 1836
+n  <Space>tw   * :call SimpleTranslate()<CR>
+	最近修改于 ~\my-vim\config\keymaps.vim 行 316
+
+   <Space><Space>   <Plug>(easymotion-prefix)
+	最近修改于 ~\my-vim\data\plugged\vim-easymotion\plugin\EasyMotion.vim 行 244
+n  <Space>     * :<C-U>WhichKey ' '<CR>
+	最近修改于 ~\my-vim\config\plugin-config.vim 行 1836

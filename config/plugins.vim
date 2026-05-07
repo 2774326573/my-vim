@@ -154,7 +154,6 @@ Plug 'mg979/vim-visual-multi', {'branch': 'master'}
 Plug 'easymotion/vim-easymotion'
 Plug 'liuchengxu/vim-which-key'
 Plug 'yianwillis/vimcdoc'
-Plug 'voldikss/vim-translator'
 Plug 'skywind3000/vim-dict'
 
 call plug#end()

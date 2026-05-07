@@ -46,6 +46,9 @@ endif
 " ===== 设置全局变量，供插件/配置使用 =====
 let g:my_vim_config_dir = s:project_dir
 
+" 在插件加载前关闭 EasyMotion 默认映射，避免 <Space><Space> 冲突。
+let g:EasyMotion_do_mapping = 0
+
 " ===== 便携/离线：统一数据目录（插件、undo、session、viminfo 等） =====
 let g:myvim_data_dir = simplify(g:my_vim_config_dir . '/data')
 if !isdirectory(g:myvim_data_dir)

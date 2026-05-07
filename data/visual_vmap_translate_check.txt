@@ -1,0 +1,18 @@
+
+
+v  <Space>trz  * :<C-U>call SimpleTranslateReplace(MyVimVisualText(), 'en_zh')<CR>
+	最近修改于 ~\my-vim\config\keymaps.vim 行 329
+v  <Space>tre  * :<C-U>call SimpleTranslateReplace(MyVimVisualText(), 'zh_en')<CR>
+	最近修改于 ~\my-vim\config\keymaps.vim 行 327
+v  <Space>tr   * :<C-U>call SimpleTranslateReplace(MyVimVisualText(), 'auto')<CR>
+	最近修改于 ~\my-vim\config\keymaps.vim 行 325
+
+v  <Space>tw   * :<C-U>call SimpleTranslate(MyVimVisualText())<CR>
+	最近修改于 ~\my-vim\config\keymaps.vim 行 317
+
+v  <Space>trz  * :<C-U>call SimpleTranslateReplace(MyVimVisualText(), 'en_zh')<CR>
+	最近修改于 ~\my-vim\config\keymaps.vim 行 329
+v  <Space>tre  * :<C-U>call SimpleTranslateReplace(MyVimVisualText(), 'zh_en')<CR>
+	最近修改于 ~\my-vim\config\keymaps.vim 行 327
+v  <Space>tr   * :<C-U>call SimpleTranslateReplace(MyVimVisualText(), 'auto')<CR>
+	最近修改于 ~\my-vim\config\keymaps.vim 行 325

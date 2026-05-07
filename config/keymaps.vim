@@ -2,7 +2,10 @@
 
 " 快捷键帮助
 nnoremap <leader>? :echo "Leader键帮助: <Space>w=保存 <Space>q=退出 <Space>e=文件树 <Space>ff=查找 <Space>fg=搜索"<CR>
-nnoremap <leader>h :echo "查看完整帮助: 打开 docs/速查卡.md 或 docs/快捷键指南.md"<CR>
+
+" 可视/选择模式下单击空格不执行默认右移，等待后续组合键。
+xnoremap <silent> <Space> <Nop>
+snoremap <silent> <Space> <Nop>
 
 " =============== 基础操作 ===============
 nnoremap <leader>w :w<CR>
@@ -119,6 +122,14 @@ vnoremap L $
 
 " =============== EasyMotion ===============
 if exists('g:loaded_easymotion')
+  " 取消 EasyMotion 默认的 <Space><Space> 前缀，避免误触提示。
+  silent! nunmap <Space><Space>
+  silent! xunmap <Space><Space>
+  silent! sunmap <Space><Space>
+  nnoremap <silent> <Space><Space> <Nop>
+  xnoremap <silent> <Space><Space> <Nop>
+  snoremap <silent> <Space><Space> <Nop>
+
   " 单字符跳转（所有窗口）
   nmap s <Plug>(easymotion-overwin-f2)
   " 单字符搜索（当前窗口）
@@ -315,20 +326,19 @@ xnoremap <leader>tz :Tableize<CR>
 
 " =============== 翻译 ===============
 nnoremap <silent> <leader>tw :call SimpleTranslate()<CR>
-xnoremap <silent> <leader>tw :<C-u>call SimpleTranslate(MyVimVisualText())<CR>
+vnoremap <silent> <leader>tw :<C-u>call SimpleTranslate(MyVimVisualText())<CR>
 nnoremap <silent> <leader>tt :call SimpleTranslate()<CR>
-xnoremap <silent> <leader>tt :<C-u>call SimpleTranslate(MyVimVisualText())<CR>
+vnoremap <silent> <leader>tt :<C-u>call SimpleTranslate(MyVimVisualText())<CR>
 nnoremap <silent> <leader>tZ :call SimpleTranslate('en_zh')<CR>
-xnoremap <silent> <leader>tZ :<C-u>call SimpleTranslate(MyVimVisualText(), 'en_zh')<CR>
+vnoremap <silent> <leader>tZ :<C-u>call SimpleTranslate(MyVimVisualText(), 'en_zh')<CR>
 nnoremap <silent> <leader>tE :call SimpleTranslate('zh_en')<CR>
-xnoremap <silent> <leader>tE :<C-u>call SimpleTranslate(MyVimVisualText(), 'zh_en')<CR>
-xnoremap <silent> <leader>tr :<C-u>call SimpleTranslateReplace(MyVimVisualText(), 'auto')<CR>
-nmap <leader>tW <Plug>Translate
-vmap <leader>tW <Plug>TranslateV
-nmap <silent> <leader>tT <Plug>TranslateW
-vmap <silent> <leader>tT <Plug>TranslateWV
-nmap <silent> <leader>tR <Plug>TranslateR
-vmap <silent> <leader>tR <Plug>TranslateRV
+vnoremap <silent> <leader>tE :<C-u>call SimpleTranslate(MyVimVisualText(), 'zh_en')<CR>
+nnoremap <silent> <leader>tr :TransReplace<CR>
+vnoremap <silent> <leader>tr :<C-u>call SimpleTranslateReplace(MyVimVisualText(), 'auto')<CR>
+nnoremap <silent> <leader>tre :TransReplace zh_en<CR>
+vnoremap <silent> <leader>tre :<C-u>call SimpleTranslateReplace(MyVimVisualText(), 'zh_en')<CR>
+nnoremap <silent> <leader>trz :TransReplace en_zh<CR>
+vnoremap <silent> <leader>trz :<C-u>call SimpleTranslateReplace(MyVimVisualText(), 'en_zh')<CR>
 
 " =============== 实用工具 ===============
 " UndoTree

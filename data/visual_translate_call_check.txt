@@ -1,0 +1,2 @@
+errmsg=E227: 映射 �kB 已存在
+sel=language

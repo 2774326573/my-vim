@@ -1,0 +1,15 @@
+
+
+n  <Space>     * :<C-U>WhichKey ' '<CR>
+	最近修改于 ~\my-vim\config\plugin-config.vim 行 1801
+n  <Space>tre  * :TransReplace zh_en<CR>
+	最近修改于 ~\my-vim\config\keymaps.vim 行 326
+n  <Space>tr   * :TransReplace<CR>
+	最近修改于 ~\my-vim\config\keymaps.vim 行 324
+
+n  <Space>     * :<C-U>WhichKey ' '<CR>
+	最近修改于 ~\my-vim\config\plugin-config.vim 行 1801
+n  <Space>trz  * :TransReplace en_zh<CR>
+	最近修改于 ~\my-vim\config\keymaps.vim 行 328
+n  <Space>tr   * :TransReplace<CR>
+	最近修改于 ~\my-vim\config\keymaps.vim 行 324

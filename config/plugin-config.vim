@@ -694,12 +694,11 @@ nnoremap <leader>dR :call vimspector#Reset()<CR>
 " =============== CMake ===============
 " 使用默认配置
 
-" =============== Vim-Translator 离线翻译 ===============
-" Python 路径配置（vim-translator 需要 Python）
+" =============== 离线翻译 ===============
+" Python 路径配置（本仓库离线词典脚本需要 Python）
 if exists('g:my_vim_config_dir')
   let s:python3_path = g:my_vim_config_dir . '/tools/python38/python.exe'
   if filereadable(s:python3_path)
-    " 设置 Python3 路径供 vim-translator 使用
     let g:python3_host_prog = s:python3_path
     let g:myvim_sdcv_python = s:python3_path
     " 将 Python 添加到 PATH
@@ -714,43 +713,49 @@ if exists('g:my_vim_config_dir')
   let $PATH = g:my_vim_config_dir . '/tools/sdcv;' . $PATH
 endif
 
-" 离线翻译配置
-let g:translator_default_engines = ['sdcv']  " 使用 sdcv 离线引擎
-let g:translator_target_lang = 'zh'
-let g:translator_source_lang = 'auto'
-
-" 翻译窗口配置（优先使用 popup 悬浮窗口）
-let g:translator_window_type = 'popup'
-let g:translator_window_max_width = 0.6
-let g:translator_window_max_height = 0.6
-let g:translator_history_enable = v:true
-
-" vim-translator 在线/外部引擎入口保留为大写，避免默认离线翻译触发插件异常。
-nmap <Leader>tW <Plug>Translate
-vmap <Leader>tW <Plug>TranslateV
-nmap <silent> <Leader>tT <Plug>TranslateW
-vmap <silent> <Leader>tT <Plug>TranslateWV
-nmap <silent> <Leader>tR <Plug>TranslateR
-vmap <silent> <Leader>tR <Plug>TranslateRV
-
-" 如果 vim-translator 无法工作，使用备用翻译功能
 " 直接调用本仓库离线词典脚本
 function! MyVimVisualText() abort
-  let l:save_reg = getreg('"')
-  let l:save_type = getregtype('"')
-  silent normal! gvy
-  let l:text = getreg('"')
-  call setreg('"', l:save_reg, l:save_type)
+  let l:start = getpos("'<")
+  let l:end = getpos("'>")
+  let l:start_lnum = l:start[1]
+  let l:end_lnum = l:end[1]
+  let l:start_col = l:start[2]
+  let l:end_col = l:end[2]
+
+  let l:text = ''
+
+  if l:start_lnum > 0 && l:end_lnum > 0
+    if l:start_lnum > l:end_lnum || (l:start_lnum == l:end_lnum && l:start_col > l:end_col)
+      let [l:start_lnum, l:end_lnum] = [l:end_lnum, l:start_lnum]
+      let [l:start_col, l:end_col] = [l:end_col, l:start_col]
+    endif
+
+    let l:lines = getline(l:start_lnum, l:end_lnum)
+    if !empty(l:lines)
+      let l:start_idx = charidx(l:lines[0], l:start_col - 1)
+      let l:end_idx = charidx(l:lines[-1], l:end_col - 1) + 1
+      let l:lines[0] = strcharpart(l:lines[0], l:start_idx)
+      let l:lines[-1] = strcharpart(l:lines[-1], 0, l:end_idx)
+      let l:text = join(l:lines, "\n")
+    endif
+  endif
+
+  " 某些情况下可视标记不可用，回退到 gv 重新选择并临时 yank。
+  if empty(trim(l:text))
+    let l:save_z = getreg('z')
+    let l:save_zt = getregtype('z')
+    try
+      silent! normal! gv"zy
+      let l:text = getreg('z')
+    finally
+      call setreg('z', l:save_z, l:save_zt)
+    endtry
+  endif
+
   return substitute(l:text, '\_s\+', ' ', 'g')
 endfunction
 
 function! s:MyVimDecodeSystemOutput(text) abort
-  if has('win32') || has('win64')
-    let l:decoded = iconv(a:text, 'cp936', &encoding)
-    if !empty(l:decoded)
-      return l:decoded
-    endif
-  endif
   return a:text
 endfunction
 
@@ -894,15 +899,33 @@ function! s:MyVimTranslateReplacement(result, direction) abort
       continue
     endif
 
+    " 清理常见乱码分隔符，避免把脏字符写回缓冲区。
+    let l:line = substitute(l:line, '[\x00-\x08\x0B\x0C\x0E-\x1F\x7F]', '', 'g')
+    let l:line = substitute(l:line, '[½�]', ' ', 'g')
+    let l:line = substitute(l:line, '\s\+', ' ', 'g')
+    let l:line = trim(l:line)
+
     " 中译英反查输出格式为: english<Tab>中文释义，替换时取英文候选。
     if a:direction ==# 'zh_en'
-      return split(l:line, "\t")[0]
+      let l:candidate = trim(split(l:line, "\t")[0])
+      if !empty(l:candidate)
+        return l:candidate
+      endif
+      continue
     endif
 
     " 英译中时跳过音标/词频行，尽量取第一条中文释义。
     if l:line =~# '[^ -~]' && l:line !~# '^\*' && l:line !~# '^[（(]'
       let l:line = substitute(l:line, '^\a\+\.\s*', '', '')
-      return l:line
+      let l:cjk_start = match(l:line, '[^ -~]')
+      if l:cjk_start >= 0
+        let l:line = strpart(l:line, l:cjk_start)
+      endif
+      let l:line = substitute(l:line, '^[:：;,，.。!?！？\-_/\\ ]\+', '', '')
+      let l:line = trim(l:line)
+      if !empty(l:line)
+        return l:line
+      endif
     endif
   endfor
   return ''
@@ -932,8 +955,12 @@ function! s:MyVimReplaceVisualSelection(text) abort
     let [l:start_col, l:end_col] = [l:end_col, l:start_col]
   endif
 
-  let l:before = strpart(getline(l:start_lnum), 0, l:start_col - 1)
-  let l:after = strpart(getline(l:end_lnum), l:end_col)
+  let l:start_line = getline(l:start_lnum)
+  let l:end_line = getline(l:end_lnum)
+  let l:start_idx = charidx(l:start_line, l:start_col - 1)
+  let l:end_idx = charidx(l:end_line, l:end_col - 1) + 1
+  let l:before = strcharpart(l:start_line, 0, l:start_idx)
+  let l:after = strcharpart(l:end_line, l:end_idx)
   let l:replacement = split(a:text, "\n", 1)
   if empty(l:replacement)
     let l:replacement = ['']
@@ -984,19 +1011,77 @@ function! SimpleTranslateReplace(...) abort
   endtry
 endfunction
 
+function! s:MyVimReplaceCurrentWord(replacement) abort
+  let l:line = getline('.')
+  let l:start_col = col('.')
+  let l:line_len = len(l:line)
+
+  if l:start_col < 1 || l:start_col > l:line_len
+    throw '光标不在可替换的单词上'
+  endif
+
+  while l:start_col > 1 && l:line[l:start_col - 2] =~# '\k'
+    let l:start_col -= 1
+  endwhile
+
+  let l:end_col = col('.')
+  while l:end_col <= l:line_len && l:line[l:end_col - 1] =~# '\k'
+    let l:end_col += 1
+  endwhile
+
+  let l:newline = strpart(l:line, 0, l:start_col - 1)
+        \ . a:replacement
+        \ . strpart(l:line, l:end_col - 1)
+  call setline('.', l:newline)
+endfunction
+
+function! s:MyVimTranslateReplaceEntry(...) abort
+  let l:text = a:0 >= 1 ? a:1 : expand('<cword>')
+  let l:direction = a:0 >= 2 ? a:2 : 'auto'
+  if empty(l:text)
+    echohl ErrorMsg
+    echo '错误: 没有找到要替换的文本'
+    echohl None
+    return
+  endif
+
+  try
+    let l:direction = s:MyVimTranslateDirection(l:text, l:direction)
+    let l:result = s:MyVimTranslateQuery(l:text, l:direction)
+    let l:replacement = s:MyVimTranslateReplacement(l:result, l:direction)
+    if empty(l:replacement)
+      throw '没有可用于替换的短翻译'
+    endif
+    call s:MyVimReplaceCurrentWord(l:replacement)
+    echohl MoreMsg
+    echo '已替换为: ' . l:replacement
+    echohl None
+  catch
+    echohl ErrorMsg
+    echo '替换失败: ' . v:exception
+    echohl None
+  endtry
+endfunction
+
 " 添加备用命令和快捷键
 command! -nargs=0 SimpleTranslate call SimpleTranslate()
 command! -nargs=1 TransWord call SimpleTranslate(<q-args>)
+command! -nargs=* TransReplace call s:MyVimTranslateReplaceEntry(<f-args>)
 nnoremap <silent> <Leader>tw :call SimpleTranslate()<CR>
-xnoremap <silent> <Leader>tw :<C-u>call SimpleTranslate(MyVimVisualText())<CR>
+vnoremap <silent> <Leader>tw :<C-u>call SimpleTranslate(MyVimVisualText())<CR>
 nnoremap <silent> <Leader>tt :call SimpleTranslate()<CR>
-xnoremap <silent> <Leader>tt :<C-u>call SimpleTranslate(MyVimVisualText())<CR>
+vnoremap <silent> <Leader>tt :<C-u>call SimpleTranslate(MyVimVisualText())<CR>
 nnoremap <silent> <Leader>ts :call SimpleTranslate()<CR>
 nnoremap <silent> <Leader>tZ :call SimpleTranslate('en_zh')<CR>
-xnoremap <silent> <Leader>tZ :<C-u>call SimpleTranslate(MyVimVisualText(), 'en_zh')<CR>
+vnoremap <silent> <Leader>tZ :<C-u>call SimpleTranslate(MyVimVisualText(), 'en_zh')<CR>
 nnoremap <silent> <Leader>tE :call SimpleTranslate('zh_en')<CR>
-xnoremap <silent> <Leader>tE :<C-u>call SimpleTranslate(MyVimVisualText(), 'zh_en')<CR>
-xnoremap <silent> <Leader>tr :<C-u>call SimpleTranslateReplace(MyVimVisualText(), 'auto')<CR>
+vnoremap <silent> <Leader>tE :<C-u>call SimpleTranslate(MyVimVisualText(), 'zh_en')<CR>
+nnoremap <silent> <Leader>tr :TransReplace<CR>
+vnoremap <silent> <Leader>tr :<C-u>call SimpleTranslateReplace(MyVimVisualText(), 'auto')<CR>
+nnoremap <silent> <Leader>tre :TransReplace zh_en<CR>
+vnoremap <silent> <Leader>tre :<C-u>call SimpleTranslateReplace(MyVimVisualText(), 'zh_en')<CR>
+nnoremap <silent> <Leader>trz :TransReplace en_zh<CR>
+vnoremap <silent> <Leader>trz :<C-u>call SimpleTranslateReplace(MyVimVisualText(), 'en_zh')<CR>
 
 function! s:MyVimTranslateStatus() abort
   echo 'Python: ' . get(g:, 'myvim_sdcv_python', '<PATH python>')
@@ -1669,10 +1754,9 @@ let g:which_key_map.t = {
       \ 't' : ['SimpleTranslate'  , '离线翻译-光标词'],
       \ 's' : ['SimpleTranslate'  , '离线翻译'],
       \ 'S' : ['MyVimTranslateStatus', '翻译状态'],
-      \ 'r' : ['SimpleTranslateReplace', '离线翻译并替换'],
-      \ 'W' : ['Translate'        , 'vim-translator窗口'],
-      \ 'T' : ['TranslateW'       , 'vim-translator词'],
-      \ 'R' : ['TranslateR'       , 'vim-translator替换'],
+  \ 'r' : ['TransReplace'     , '离线翻译并替换(自动)'],
+  \ 'e' : ['TransReplace zh_en', '替换: 中->英'],
+  \ 'Z' : ['TransReplace en_zh', '替换: 英->中'],
       \ 'm' : ['TableModeToggle'  , '表格模式'],
       \ 'a' : ['TableModeRealign' , '表格对齐'],
       \ 'z' : ['Tableize'         , '选区转表格'],
@@ -1750,4 +1834,5 @@ let g:which_key_map['<C-w>'] = 'which_key_ignore'
 " 注册 Which-Key
 call which_key#register('<Space>', "g:which_key_map")
 nnoremap <silent> <leader> :<c-u>WhichKey '<Space>'<CR>
-vnoremap <silent> <leader> :<c-u>WhichKeyVisual '<Space>'<CR>
+nnoremap <silent> <leader><leader> :<c-u>WhichKey '<Space>'<CR>
+vnoremap <silent> <leader><leader> :<c-u>WhichKeyVisual '<Space>'<CR>

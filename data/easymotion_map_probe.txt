@@ -1,0 +1,25 @@
+
+
+s  <Space>     * <Nop>
+	最近修改于 ~\my-vim\config\keymaps.vim 行 8
+x  <Space>     * <Nop>
+	最近修改于 ~\my-vim\config\keymaps.vim 行 7
+   <Space><Space>   <Plug>(easymotion-prefix)
+	最近修改于 ~\my-vim\data\plugged\vim-easymotion\plugin\EasyMotion.vim 行 244
+n  <Space>     * :<C-U>WhichKey ' '<CR>
+	最近修改于 ~\my-vim\config\plugin-config.vim 行 1836
+
+   <Space><Space>   <Plug>(easymotion-prefix)
+	最近修改于 ~\my-vim\data\plugged\vim-easymotion\plugin\EasyMotion.vim 行 244
+n  <Space>     * :<C-U>WhichKey ' '<CR>
+	最近修改于 ~\my-vim\config\plugin-config.vim 行 1836
+
+x  <Space>     * <Nop>
+	最近修改于 ~\my-vim\config\keymaps.vim 行 7
+   <Space><Space>   <Plug>(easymotion-prefix)
+	最近修改于 ~\my-vim\data\plugged\vim-easymotion\plugin\EasyMotion.vim 行 244
+
+s  <Space>     * <Nop>
+	最近修改于 ~\my-vim\config\keymaps.vim 行 8
+   <Space><Space>   <Plug>(easymotion-prefix)
+	最近修改于 ~\my-vim\data\plugged\vim-easymotion\plugin\EasyMotion.vim 行 244

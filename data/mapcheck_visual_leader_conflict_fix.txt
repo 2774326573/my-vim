@@ -1,0 +1,36 @@
+
+
+x  <Space>T      <Plug>(table-mode-tableize-delimiter)
+	最近修改于 ~\my-vim\data\plugged\vim-table-mode\plugin\table-mode.vim 行 128
+x  <Space>tz   * :Tableize<CR>
+	最近修改于 ~\my-vim\config\keymaps.vim 行 313
+x  <Space>cc   * :Commentary<CR>
+	最近修改于 ~\my-vim\config\keymaps.vim 行 165
+x  <Space>aa   * :EasyAlign<CR>
+	最近修改于 ~\my-vim\config\keymaps.vim 行 161
+   <Space><Space>   <Plug>(easymotion-prefix)
+	最近修改于 ~\my-vim\data\plugged\vim-easymotion\plugin\EasyMotion.vim 行 244
+x  <Space>trz  * :<C-U>call SimpleTranslateReplace(MyVimVisualText(), 'en_zh')<CR>
+	最近修改于 ~\my-vim\config\keymaps.vim 行 329
+x  <Space>tre  * :<C-U>call SimpleTranslateReplace(MyVimVisualText(), 'zh_en')<CR>
+	最近修改于 ~\my-vim\config\keymaps.vim 行 327
+x  <Space>tr   * :<C-U>call SimpleTranslateReplace(MyVimVisualText(), 'auto')<CR>
+	最近修改于 ~\my-vim\config\keymaps.vim 行 325
+x  <Space>tE   * :<C-U>call SimpleTranslate(MyVimVisualText(), 'zh_en')<CR>
+	最近修改于 ~\my-vim\config\keymaps.vim 行 323
+x  <Space>tZ   * :<C-U>call SimpleTranslate(MyVimVisualText(), 'en_zh')<CR>
+	最近修改于 ~\my-vim\config\keymaps.vim 行 321
+x  <Space>tt     <Plug>(table-mode-tableize)
+	最近修改于 ~\my-vim\data\plugged\vim-table-mode\plugin\table-mode.vim 行 124
+x  <Space>tw   * :<C-U>call SimpleTranslate(MyVimVisualText())<CR>
+	最近修改于 ~\my-vim\config\keymaps.vim 行 317
+
+x  <Space>trz  * :<C-U>call SimpleTranslateReplace(MyVimVisualText(), 'en_zh')<CR>
+	最近修改于 ~\my-vim\config\keymaps.vim 行 329
+x  <Space>tre  * :<C-U>call SimpleTranslateReplace(MyVimVisualText(), 'zh_en')<CR>
+	最近修改于 ~\my-vim\config\keymaps.vim 行 327
+x  <Space>tr   * :<C-U>call SimpleTranslateReplace(MyVimVisualText(), 'auto')<CR>
+	最近修改于 ~\my-vim\config\keymaps.vim 行 325
+
+   <Space><Space>   <Plug>(easymotion-prefix)
+	最近修改于 ~\my-vim\data\plugged\vim-easymotion\plugin\EasyMotion.vim 行 244
